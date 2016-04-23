@@ -1,7 +1,7 @@
 .map-venceni {
   position: relative;
   height:450px;
-  background-image:url('images/mapa_lg_vysak.png');
+  background-image:url('images/mapa_lg_vysak.jpg');
   margin-bottom: 20px;
  } 
  .map-venceni .image {
@@ -54,7 +54,7 @@
 .map-venceni {
   position: relative;
   height:500px;
-  background-image:url('images/mapa_xs_vysak.png');
+  background-image:url('images/mapa_xs_vysak.jpg');
  } 
  .map-venceni .image {
     position: absolute;
