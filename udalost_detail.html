@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html">Psí seznamka</a></li>
+					<li><a href="vencici.html">Právě venčící</a></li>
+					<li><a href="trasy.html">Trasy</a></li>
+					<li class="active"><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="profil_panicka.html">Profil majitele</a></li>
+							<li ><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+		<!-- celkovy blok -->
+		<div class="container">
+			<div class="row">
+
+
+				<!-- hlavni blok -->
+				<div class="col-lg-12 ">
+					<h3>Detail události</h3>
+					<br/>
+
+					<div class="menu_dog_prof" style="margin-bottom: 5px;">
+						<a href="udalosti.html"><i class="fa fa-chevron-left"></i> Zpět na seznam událostí</a>
+					</div>
+
+					<!-- hlavicka -->
+					<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card margin-bot">
+						
+						<div class="row udalosti_padding">
+							<div class="col-xs-12 col-md-12 col-lg-3">
+								<div class="row">
+									<img src="images/play-edit/exhib.jpg" class="img-responsive" width="100%">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-12 col-lg-9 udalosti_left_mar">
+								<div class="row ">
+									<table class="table borderless" style="margin-bottom: 0px">
+										<tr>
+											<td colspan="2"><h3 class="udalost">3. mezinárodní výstava</h3></td>
+										</tr>
+										<tr>
+											
+											<td colspan="2"><h4 class="udalost">5.4.2016 v 8:00</h4></td>
+										</tr>
+										<tr>
+											<td><strong>Místo:</strong></td>
+											<td><i class="fa fa-map-marker"></i> Letňanská 756/66 Praha 9 Letňany</td>
+										</tr>
+										<tr>
+											<td><strong>Typ události:</strong></td>
+											<td>Veřejná událost</td>
+										</tr>	
+										<tr>
+											<td><strong>Kategorie:</strong></td>
+											<td>Výstavy</td>
+										</tr>
+										<tr>
+											<td><strong>Určena pro plemena:</strong></td>
+											<td><i class="fa fa-paw"></i> Všechna plemena FCI</td>
+										</tr>
+										<tr class="visible-lg">
+											<td></td>
+											<td></td>
+											<td colspan="2"><button style="width: 100%;" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Pozvat přátelé</button></td>
+										</tr>										
+									</table>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-12 visible-xs">
+								<div class="row" style="text-align: right;">
+									<br/>
+									<button style="width: 100%;" type="submit" class="btn btn-default" >Pozvat přátelé</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+					<div class="col-lg-8 mobile_padding">
+						<div class="row">
+
+							<!-- pozvala vas -->
+							<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card padding margin-bot mobile_padding">
+								<table class="table borderless" style="margin-bottom: 0px">
+									<tr>
+										<td class="col-lg-1 col-xs-3 col-md-3"><img src="images/people-edit/jitka.jpg" class="img-responsive" width="100%"></td>
+										<td>Pozval(a) Vás <strong>Jitka Čarovná</strong></td>
+										<td class="visible-lg"><button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-check"></i> Zůčastním se</button></td>
+										<td class="visible-lg"><button style="width: 100%" type="submit" class="btn btn-default">Možná</button></td>
+										<td class="visible-lg"><button style="width: 100%" type="submit" class="btn btn-default">Odmítnout</button></td>
+									</tr>
+								</table>
+								<p class="hidden-lg"><button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-check"></i> Zůčastním se</button></p>
+								<p class="hidden-lg"><button style="width: 100%" type="submit" class="btn btn-default">Možná</button></p>
+								<p class="hidden-lg"><button style="width: 100%" type="submit" class="btn btn-default">Odmítnout</button></p>
+
+							</div> 
+
+							<!-- komentare -->
+							<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card padding margin-bot mobile_padding">
+								<div class="col-lg-12 bottom">
+									<div class="row">
+										<div class="col-xs-4 col-sm-5 col-md-3 col-lg-2">
+											<img src="images/people-edit/me.jpg" class="img-responsive" width="100%">
+										</div>
+										<div class="col-xs-8 col-sm-7 col-md-9 col-lg-10">
+											<div class="comment_sm">
+												<div class="bubble me">Napište komentář...</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="col-lg-12 col-md-12 col-xs-12 bottom mobile_padding" style="padding-bottom: 0px">
+									<table class="table borderless table-condensed">
+										<tr>
+											<td rowspan="3" class="col-lg-1 col-xs-4 col-md-4"><img src="images/people-edit/petra.jpg" class="img-responsive" width="100%"></td>
+										</tr>
+										<tr class="small_row"><td><strong><a href="">Petra Svatobová <small>22.2.2016 17:00</small></a></strong></td></tr>
+										<tr class="small_row"><td>Tentokrát půjdeme, už se těšíme.</td</tr>
+									</table>
+								</div>
+
+								<div class="col-lg-12 col-md-12 col-xs-12 bottom mobile_padding" style="padding-bottom: 0px">
+									<table class="table borderless table-condensed">
+										<tr>
+											<td rowspan="3" class="col-lg-1 col-xs-4 col-md-4"><img src="images/people-edit/lukas.jpg" class="img-responsive" width="100%"></td>
+										</tr>
+										<tr class="small_row"><td><strong><a href="">Lukáš Pokorný <small>20.2.2016 17:00</small></a></strong></td></tr>
+										<tr class="small_row"><td>Nám to letos bohužel nevyjde.</td></tr>
+									</table>
+								</div>						
+							</div>				
+							<!-- konec leveho bloku - pozvani + komenty -->
+						</div>
+					</div>	
+
+					<!-- zacatek praveho bloku - zucastni se + mapa -->
+					<div class="col-lg-4 col-md-12 col-xs-12 mobile_padding">
+						<div class="row">
+							<div class="col-lg-2">
+											
+							</div>
+							<div class="col-lg-10 card margin-bot mobile_padding">
+								<h5><a href="#">Zůčastní se (20)</a></h5>										
+								<div class="col-lg-3 col-xs-3 col-md-3 grey-bg margin-bot">
+									<div class="row">
+										<img src="images/people-edit/me.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/petra.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+																		
+								<div class="col-lg-3 col-xs-3 col-md-3 grey-bg">
+									<div class="row">
+										<img src="images/people-edit/daniela.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/lukas.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+								<div class="col-lg-3 col-xs-3 col-md-3 grey-bg">
+									<div class="row">
+										<img src="images/people-edit/katerina.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/luen.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+								<div class="col-lg-3 col-xs-3 col-md-3 grey-bg">
+									<div class="row">
+										<img src="images/people-edit/eva.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/jitka.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+							</div>
+
+							<!-- sdilet -->
+							<div class="col-lg-2 col-xs-12 col-md-12">
+											
+							</div>
+							<div class="col-lg-10 col-xs-12 col-md-12 margin-bot right" data-toggle="modal" data-target="#info">
+								<i class="fa fa-comment fa-lg" style="margin-right: 5px; cursor: pointer;"></i> 
+								<i class="fa fa-envelope fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+								<i class="fa fa-facebook fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+								<i class="fa fa-google-plus fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+								<i class="fa fa-twitter fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+							</div>
+						</div>
+									
+						<!-- mapa -->
+						<div class="row">
+							<div class="col-lg-2 col-xs-12 col-md-12">		
+							</div>
+
+							<div class="col-lg-10 col-xs-12 col-md-12 card" style="padding: 0px">
+								<img src="images/mapa_ctverec.jpg" class="img-responsive" width="100%">
+							</div>
+											
+						</div>
+					</div>
+
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>	
+
+
+
+
+
+					<!-- konec hlavniho bloku -->
+				</div>
+			</div>			
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link rel="stylesheet" href="vencici.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html">Psí seznamka</a></li>
+					<li class="active"><a href="vencici.html">Právě venčící</a></li>
+					<li><a href="trasy.html">Trasy</a></li>
+					<li><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="profil_panicka.html">Profil majitele</a></li>
+							<li ><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+		<!-- celkovy blok -->
+		<div class="container">
+			<div class="row">
+
+
+				<!-- hlavni blok -->
+				<div class="col-lg-12 ">
+					<div class="row">
+					<h3>Právě venčící uživatelé</h3>
+
+					<!-- radit dle a ruzna zobrazeni -->
+					<table class="table table-responsive">
+						<tr>
+					<!-- radit dle a ruzna zobrazeni -->
+					<table class="table table-responsive">
+						<tr>
+							<td class="menu_dog_prof">
+								<form class="form-inline" role="form">
+								  <div class="form-group">
+								    <label for="email">Okruh (km):</label>
+								  <div class="input-group spinner">
+								    <input type="text" class="form-control" value="15" min="5">
+								    <div class="input-group-btn-vertical">
+								      <button class="btn btn-default" name="up1" id="up1" type="button"><i class="fa fa-caret-up"></i></button>
+								      <button class="btn btn-default" name="dw1" id="dw1" type="button"><i class="fa fa-caret-down"></i></button>
+								    </div>
+								  </div>
+								  </div>
+
+								</form>  
+							</td>
+						</tr>
+					</table>
+						</tr>
+					</table>
+
+
+
+					<!-- VERZE PRO PC -->
+					<div class="map-venceni col-lg-12">
+  						<div class="image image1">
+  							<div class="dropdown">
+  								<button class="btn btn-link btn-xs dropdown-toggle visible-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+ 									<img src="images/people-edit/daniela.jpg" class="thumbnail card center img-responsive" width="100%" style="cursor: pointer;">
+  								</button>
+  								<ul class="ddmenu dropdown-menu col-lg-12 col-xs-1" aria-labelledby="dropdownMenu1">
+
+  									<div class="col-lg-12 margin-bot"> 
+  										<p><h4><a href=""> Daniela Nováková <small>(22 let, Praha)</small></a></h4></p>
+
+										<br/>
+  										<div class="row">
+
+		  									<div class="col-lg-3 col-xs-4">
+		  										<img src="images/dog-edit/diona.jpg" class="center img-responsive" width="100%">
+		  									</div>
+		  									<div class="col-lg-7 col-xs-6">
+		  										<div class="row">
+		  											<h4 style="padding-bottom: 5px">Diona</h4>
+		  											<p>Kříženec (4 roky)       <i class="fa fa-venus"></i></p>
+		  											
+		  										</div>
+		  									</div>
+		  									<div class="col-lg-2 col-xs-2">
+		  										<div class="row">
+		  											<img src="images/all_large.png" class="lowpad padleft img-responsive" width="100%">
+		  										</div>
+		  									</div>
+										</div>				
+									</div>
+
+  									<div class="col-lg-12 margin-bot"> 
+  										<div class="row">
+
+		  									<div class="col-lg-3 col-xs-4">
+		  										<img src="images/dog-edit/Babeta.jpg" class="center img-responsive" width="100%">
+		  									</div>
+		  									<div class="col-lg-7 col-xs-6">
+		  										<div class="row">
+		  											<h4 style="padding-bottom: 5px">Babetka</h4>
+		  											<p>Kříženec (10 let)       <i class="fa fa-venus"></i></p>
+		  											
+		  										</div>
+		  									</div>
+		  									<div class="col-lg-2 col-xs-2">
+		  										<div class="row">
+		  											<img src="images/all_middle.png" class="lowpad padleft img-responsive" width="100%">
+		  										</div>
+		  									</div>
+										</div>
+										<br/>
+										<button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment"></i> Napsat zprávu</button>	
+									</div>	
+
+
+									
+									
+  								</ul>
+
+  								<img src="images/people-edit/daniela.jpg" class="thumbnail card center img-responsive visible-xs" width="100%" style="cursor: pointer;" data-toggle="modal" data-target="#ven1">
+
+								<!-- Odeslat zpravu-->
+								<div class="modal fade" id="ven1" role="dialog">
+								    <div class="modal-dialog">
+														    
+								     <!-- Modal content-->
+								    	<div class="modal-content">
+								    	    <div class="modal-header">
+								    	     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												 <h4><a href="">Daniela Nováková <small>(22 let, Praha)</small></a></h4>
+											</div>
+
+											<div class="modal-body">
+												<div>
+													<img src="images/dog-edit/diona.jpg" class="center img-responsive" width="30%">										
+													<h4 style="padding-bottom: 5px">Diona</h4>
+		  											<p>Kříženec (4 roky)       <i class="fa fa-venus"></i></p>
+													<p>Velká velikost</p>
+												</div>
+												<div>
+													<img src="images/dog-edit/babeta.jpg" class="center img-responsive" width="30%">										
+													<h4 style="padding-bottom: 5px">Babetka</h4>
+		  											<p>Kříženec (10 let)       <i class="fa fa-venus"></i></p>
+													<p>Střední velikost</p>
+												</div>												
+			  							
+											</div>    
+									 
+									    	<div class="modal-footer">
+									    		<button style="width: 100%" type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-comment"></i> Napsat zprávu</button> 
+											</div>	
+										</div>      
+								    </div>
+								</div>
+  							</div>
+  						</div>
+
+  						<div class="image image2">
+  							<div class="dropdown">
+  								<button class="btn btn-link btn-xs dropdown-toggle visible-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+ 									<img src="images/people-edit/eva.jpg" class="thumbnail card center img-responsive" width="100%" style="cursor: pointer;">
+  								</button>
+  								<ul class="ddmenu dropdown-menu col-lg-12" aria-labelledby="dropdownMenu1">
+									<div class="col-lg-12 margin-bot"> 
+  										<p><h4><a href=""> Eva Radková <small>(26 let, Liberec)</small></a></h4></p>
+										<br/>
+  										<div class="row">
+
+		  									<div class="col-lg-3 col-xs-4">
+		  										<img src="images/dog-edit/evelina.jpg" class="center img-responsive" width="100%">
+		  									</div>
+		  									<div class="col-lg-7 col-xs-6">
+		  										<div class="row">
+		  											<h4 style="padding-bottom: 5px">Evelina ze Dvora</h4>
+		  											<p>Maltézský psík (5 let)       <i class="fa fa-venus"></i></p>
+		  											
+		  										</div>
+		  									</div>
+		  									<div class="col-lg-2 col-xs-2">
+		  										<div class="row">
+		  											<img src="images/all_small.png" class="lowpad padleft img-responsive" width="100%">
+		  										</div>
+		  									</div>
+										</div>
+										<br/>
+										<p><button style="width: 100%" type="submit" class="btn btn-success" data-toggle="modal" data-target="#message2"><i class="fa fa-comment"></i> Napsat zprávu</button></p>
+  										<p><button style="width: 100%" type="submit" class="btn btn-default" ><i class="fa fa-user"></i> Žádost o přátelství</button></p>
+									</div>
+  								</ul>
+
+									<!-- Odeslat zpravu-->
+									<div class="modal fade" id="message2" role="dialog">
+									    <div class="modal-dialog">
+															    
+									     <!-- Modal content-->
+									    	<div class="modal-content">
+											    <div class="modal-header">
+													
+													<h4 class="modal-title">Napsat zprávu</h4>
+												</div>
+												<div class="modal-body">
+													<form class="form">
+													  <div class="form-group">
+													    <label for="exampleInputName2">Komu:</label>
+													    <input disabled type="text" class="form-control" id="exampleInputName2" placeholder="Eva Radkova (Evelina ze Dvora)">
+													  </div>
+													  <textarea class="form-control" rows="3">Ahoj, líbí se mi tvůj pejsek, nechceš se setkat?</textarea>									  
+													</form>
+												</div>    
+										 
+										    	<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Odeslat</button>   
+												</div>	
+											</div>      
+									    </div>
+									</div>
+
+
+								<img src="images/people-edit/eva.jpg" class="thumbnail card center img-responsive visible-xs" width="100%" style="cursor: pointer;" data-toggle="modal" data-target="#ven2">
+
+								<!-- Odeslat zpravu-->
+								<div class="modal fade" id="ven2" role="dialog">
+								    <div class="modal-dialog">
+														    
+								     <!-- Modal content-->
+								    	<div class="modal-content">
+								    	    <div class="modal-header">
+								    	     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4><a href=""> Eva Radková <small>(26 let, Liberec)</small></a></h4>
+											</div>
+
+											<div class="modal-body">
+												<div>
+													<img src="images/dog-edit/evelina.jpg" class="center img-responsive" width="30%">										
+													<h4 style="padding-bottom: 5px">Evelina ze Dvora</h4>
+		  											<p>Maltézský psík (5 let)       <i class="fa fa-venus"></i></p>
+													<p>Malá velikost</p>
+												</div>									
+
+											</div>    
+									 
+									    	<div class="modal-footer">
+												<button style="width: 100%" type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-comment"></i> Napsat zprávu</button> 
+											</div>	
+										</div>      
+								    </div>
+								</div>
+
+
+  							</div>
+  						</div>
+
+  						<div class="image image3">
+  							<div class="dropdown">
+  								<button class="btn btn-link btn-xs dropdown-toggle visible-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+ 									<img src="images/people-edit/david.jpg" class="thumbnail card center img-responsive" width="100%" style="cursor: pointer;">
+  								</button>
+  								<ul class="ddmenu dropdown-menu col-lg-12 dropdown-menu-right" aria-labelledby="dropdownMenu1">
+									<div class="col-lg-12 margin-bot"> 
+  										<p><h4><a href=""> David Beneš <small>(35 let, Praha)</small></a></h4></p>
+
+  										<br/>
+  										<div class="row">
+
+		  									<div class="col-lg-3 col-xs-4">
+		  										<img src="images/dog-edit/fredie.jpg" class="center img-responsive" width="100%">
+		  									</div>
+		  									<div class="col-lg-7 col-xs-6">
+		  										<div class="row">
+		  											<h4 style="padding-bottom: 5px">Fredie</h4>
+		  											<p>Afghánský chrt (6 měsíců)       <i class="fa fa-mars"></i></p>
+		  											
+		  										</div>
+		  									</div>
+		  									<div class="col-lg-2 col-xs-2">
+		  										<div class="row">
+		  											<img src="images/all_middle.png" class="lowpad padleft img-responsive" width="100%">
+		  										</div>
+		  									</div>
+										</div>
+										<br/>
+										<button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment"></i> Napsat zprávu</button>
+  										
+									</div>
+  								</ul>
+
+  								<img src="images/people-edit/david.jpg" class="thumbnail card center img-responsive visible-xs" width="100%" style="cursor: pointer;" data-toggle="modal" data-target="#ven3">
+
+
+								<!-- Odeslat zpravu-->
+								<div class="modal fade" id="ven3" role="dialog">
+								    <div class="modal-dialog">
+														    
+								     <!-- Modal content-->
+								    	<div class="modal-content">
+								    	    <div class="modal-header">
+								    	     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4><a href=""> David Beneš <small>(35 let, Praha)</small></a></h4>
+											</div>
+
+											<div class="modal-body">
+												<div>
+													<img src="images/dog-edit/fredie.jpg" class="center img-responsive" width="30%">										
+													<h4 style="padding-bottom: 5px">Fredie</h4>
+		  											<p>Afghánský chrt (6 měsíců)       <i class="fa fa-mars"></i></p>
+													<p>Střední velikost</p>
+												</div>									
+												
+											</div>    
+									 
+									    	<div class="modal-footer">
+												<button style="width: 100%" type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-comment"></i> Napsat zprávu</button>  
+											</div>	
+										</div>      
+								    </div>
+								</div>
+
+
+  							</div>
+  						</div>
+
+  						
+
+  						<div class="image image6">
+  							<div class="dropdown">
+  								<button class="btn btn-link btn-xs dropdown-toggle visible-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+ 									<img src="images/people-edit/katerina.jpg" class="thumbnail card center img-responsive" width="100%" style="cursor: pointer;">
+  								</button>
+  								<ul class="ddmenu dropdown-menu col-lg-12" aria-labelledby="dropdownMenu1">
+									<div class="col-lg-12 margin-bot"> 
+  										<p><h4><a href=""> Kateřina Cejchlová <small>(15 let, Nová Ves)</small></a></h4></p>
+
+  										<br/>
+  										<div class="row">
+
+		  									<div class="col-lg-3 col-xs-4">
+		  										<img src="images/dog-edit/brox.jpg" class="center img-responsive" width="100%">
+		  									</div>
+		  									<div class="col-lg-7 col-xs-6">
+		  										<div class="row">
+		  											<h4 style="padding-bottom: 5px">Brox Bílý Sníh</h4>
+		  											<p>Border Kolie (5 let)       <i class="fa fa-mars"></i></p>
+		  											
+		  										</div>
+		  									</div>
+		  									<div class="col-lg-2 col-xs-2">
+		  										<div class="row">
+		  											<img src="images/all_middle.png" class="lowpad padleft img-responsive" width="100%">
+		  										</div>
+		  									</div>
+										</div>
+										<br/>
+										<p><button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment"></i> Napsat zprávu</button></p>
+  										<p><button style="width: 100%" type="submit" class="btn btn-default"><i class="fa fa-user"></i> Žádost o přátelství</button></p>
+									</div>
+  								</ul>
+
+								<img src="images/people-edit/katerina.jpg" class="thumbnail card center img-responsive visible-xs" width="100%" style="cursor: pointer;" data-toggle="modal" data-target="#ven5">
+
+								
+								<!-- Odeslat zpravu-->
+								<div class="modal fade" id="ven5" role="dialog">
+								    <div class="modal-dialog">
+														    
+								     <!-- Modal content-->
+								    	<div class="modal-content">
+								    	    <div class="modal-header">
+								    	     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4><a href=""> Kateřina Cejchlová <small>(15 let, Nová Ves)</small></a></h4>
+											</div>
+
+											<div class="modal-body">
+												<div>
+													<img src="images/dog-edit/brox.jpg" class="center img-responsive" width="30%">										
+													<h4 style="padding-bottom: 5px">Brox Bílý Sníh</h4>
+		  											<p>Border Kolie (5 let)       <i class="fa fa-venus"></i></p>
+													<p>Střední velikost</p>
+												</div>									
+												
+											</div>    
+									 
+									    	<div class="modal-footer">
+												<p><button style="width: 100%" type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-comment"></i> Napsat zprávu</button></p>  
+												<p><button style="width: 100%" type="submit" class="btn btn-default"><i class="fa fa-user"></i> Žádost o přátelství</button></p>
+											</div>	
+										</div>      
+								    </div>
+								</div>
+								
+  							</div>
+  						</div>  
+
+  						
+
+  						 																	
+
+  						<div class="image image5">
+  							<i class="fa fa-map-marker fa-3x" data-toggle="tooltip" title="Vaše pozice" style="cursor: default; color: #cc0000"></i>
+  						</div>
+					</div>
+
+
+					<div class="col-xs-12 visible-xs" style="margin-bottom: 5px">
+						<button style="width: 100%" type="button" class="btn btn-success" data-toggle="modal" data-target="#info"><i class="fa fa-paw"></i> Začít venčit</button>
+						
+					</div>
+					<div class="right margin-bot visible-xs">
+						<a data-toggle="modal" data-target="#info" href="">Nastavení venčení</a>
+					</div>
+
+
+			
+                    <!-- Vencici pratele -->				
+					<div class="col-lg-12 col-md-12 col-xs-12 card menu_title">
+						<div class="col-lg-6 col-md-6 col-xs-6">
+							<strong>Venčící přátelé <small>(2)</small></strong>
+						</div>	
+					</div>
+		
+					<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card margin-bot" style="cursor: default;">
+						<div class="col-lg-4 col-md-6 col-xs-12" style="padding-top: 20px">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-xs-5">
+									<img src="images/people-edit/daniela.jpg" class="img-responsive" width="100%">
+										<div class="eyes"  data-toggle="tooltip" title="Uživatel je viditelný na mapě">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+			  									<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  									<i class="fa fa-eye fa-stack-1x"></i>
+											</span>					
+										</div>	
+								</div>
+								<div class="col-lg-7 col-md-7 col-xs-7">
+									<div class="row">
+										<h4><a href=""> Daniela Nováková <small>(22 let)</small></a></h4>
+										<p class="lowpad">2 psi</p>
+										<br/>
+										<p class="lowpad">5 km</p>
+										<p class="lowpad">00:30 min</p>
+										<a href="detail_trasy.html" class="lowpad">Pankrácká trasa</a>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+
+						<div class="col-lg-4 col-md-6 col-xs-12" style="padding-top: 20px">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-xs-5">
+									<img src="images/people-edit/david.jpg" class="img-responsive" width="100%">
+										<div class="eyes" data-toggle="tooltip" title="Uživatel je viditelný na mapě">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+			  									<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  									<i class="fa fa-eye fa-stack-1x"></i>
+											</span>					
+										</div>										
+								</div>
+								<div class="col-lg-7 col-md-7 col-xs7">
+									<div class="row">
+										<h4><a href=""> David Beneš <small>(35 let)</small></a></h4>
+										<p class="lowpad">1 pes</p>
+										<br/>
+										<p class="lowpad">3 km</p>
+										<p class="lowpad">00:15 min</p>
+										<p>Volná procházka</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+	
+					</div>
+									
+
+                    <!-- Ostatní -->				
+					<div class="col-lg-12 col-md-12 col-xs-12 card menu_title">
+						<div class="col-lg-12 col-md-12 col-xs-12">
+							<strong>Ostatní <small>(3)</small></strong>
+						</div>	
+					</div>
+		
+					<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card margin-bot" style="cursor: default;">
+						<div class="col-lg-4 col-md-6 col-xs-12" style="padding-top: 20px">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-xs-5">
+									<img src="images/people-edit/eva.jpg" class="img-responsive" width="100%">
+										<div class="eyes" data-toggle="tooltip" title="Uživatel je viditelný na mapě">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+			  									<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  									<i class="fa fa-eye fa-stack-1x"></i>
+											</span>					
+										</div>	
+								</div>
+								<div class="col-lg-7 col-md-7 col-xs-7">
+									<div class="row">
+										<h4><a href=""> Eva Radková <small>(26 let)</small></a></h4>
+										<p class="lowpad">1 pes</p>
+										<br/>
+										<p class="lowpad">8 km</p>
+										<p class="lowpad">01:30 min</p>
+										<p>Volná procházka</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+
+						<div class="col-lg-4 col-md-6 col-xs-12" style="padding-top: 20px">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-xs-5">
+									<img src="images/people-edit/katerina.jpg" class="img-responsive" width="100%">
+										<div class="eyes" data-toggle="tooltip" title="Uživatel je viditelný na mapě">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+			  									<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  									<i class="fa fa-eye fa-stack-1x"></i>
+											</span>					
+										</div>										
+								</div>
+								<div class="col-lg-7 col-md-7 col-xs-7">
+									<div class="row">
+										<h4><a href=""> Kateřina Cejchlová <small>(15 let)</small></a></h4>
+										<p class="lowpad">1 pes</p>
+										<br/>
+										<p class="lowpad">15 km</p>
+										<p class="lowpad">02:45 min</p>
+										<p>Volná procházka</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+			
+										
+						<div class="col-lg-4 col-md-6 col-xs-12" style="padding-top: 20px">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-xs-5">
+									<img src="images/people-edit/jitka.jpg" class="img-responsive" width="100%">
+										<div class="eyes" data-toggle="tooltip" title="Uživatel není viditelný na mapě">
+											<span class="fa-stack fa-lg">
+												<i class="fa fa-circle fa-stack-2x fa-inverse" style="color: #ffad33"></i>
+			  									<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  									<i class="fa fa-eye-slash fa-stack-1x"></i>
+											</span>					
+										</div>										
+								</div>
+								<div class="col-lg-7 col-md-7 col-xs-7">
+									<div class="row">
+										<h4><a href="" data-toggle="modal" data-target="#myModal">Jitka Čarovná <small>(19 let)</small></a></h4>
+
+												  <div class="modal fade" id="myModal" role="dialog">
+												    <div class="modal-dialog">
+												    
+												      <!-- Modal content-->
+												      <div class="modal-content">
+												        <div class="modal-header">
+												          <button type="button" class="close" data-dismiss="modal">&times;</button>
+												          <h4 class="modal-title">Jitka Čarovná <small>(19 let)</small></h4>
+												        </div>
+												        <div class="modal-body">
+															<table class="table borderless">
+																<!-- musi to byt v table, divy a jejich col to nebere spravne -->
+																<tr>
+																	<td>
+																		<div class="row">
+										  									<div class="col-lg-3 col-xs-4">
+										  										<img src="images/dog-edit/rex.jpg" class="center img-responsive" width="100%">
+										  									</div>
+										  									<div class="col-lg-7 col-xs-6">
+										  										<div class="row">
+										  											<h4 style="padding-bottom: 5px">Rex</h4>
+										  											<p>Biegel (1 rok)       <i class="fa fa-mars"></i></p>
+										  											
+										  										</div>
+										  									</div>
+										  									<div class="col-lg-2 col-xs-2">
+										  										<div class="row">
+										  											<img src="images/all_middle.png" class="lowpad padleft img-responsive" width="100%">
+										  										</div>
+										  									</div>
+																		</div>
+																	</td>
+																</tr>	
+																<tr>
+																	<td>
+																		<div class="col-lg-4 col-xs-12 margin-bot">
+																			<div class="row">
+																				<button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment"></i> Napsat zprávu</button>
+																			</div>
+																		</div>
+																		<div class="col-lg-4 col-xs-12 margin-bot">
+																			<div class="row">
+																				<button style="width: 100%;" type="submit" class="btn btn-default"><i class="fa fa-map-marker"></i> Žádost o polohu</button>
+																			</div>
+																		</div>
+																		<div class="col-lg-4 col-xs-12">
+																			<div class="row">
+																				<button style="width: 100%" type="submit" class="btn btn-default"><i class="fa fa-user"></i> Žádost o přátelství</button>
+																			</div>
+																		</div>
+																	</td>
+																</tr>									
+		  																			
+															</table>
+												        </div>
+												        <div class="modal-footer">
+												          <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+												        </div>
+												      </div>
+												      
+												    </div>
+												  </div>
+
+										<p class="lowpad">1 pes</p>
+										<br/>
+										<p class="lowpad">5 km</p>
+										<p class="lowpad">00:30 min</p>
+										<p>Volná procházka</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>					
+
+					<div>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x fa-inverse" style="color: #ffad33;"></i>
+			  				<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  				<i class="fa fa-eye-slash fa-stack-1x"></i>
+						</span> Uživatel není vidět na mapě, o jeho polohu ho musíte požádat.				
+					</div>
+					<div>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+			  				<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  				<i class="fa fa-eye fa-stack-1x"></i>
+						</span> Uživatel je vidět na mapě.				
+					</div>
+
+
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>	
+					<!-- konec hlavniho bloku -->
+				</div>
+				</div>
+			</div>			
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

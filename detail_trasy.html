@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="./js/fancybox/helpers/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css">
+
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html">Psí seznamka</a></li>
+					<li><a href="vencici.html">Právě venčící</a></li>
+					<li class="active"><a href="trasy.html">Trasy</a></li>
+					<li><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="profil_panicka.html">Profil majitele</a></li>
+							<li ><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+		<!-- celkovy blok -->
+		<div class="container">
+			<div class="row">
+
+
+				<!-- hlavni blok -->
+				<div class="col-lg-12 ">
+					<h3>Detail veřejné trasy</h3>
+					<br/>
+
+					<div class="menu_dog_prof" style="margin-bottom: 5px;">
+						<a href="trasy.html"><i class="fa fa-chevron-left"></i> Zpět na seznam tras</a>
+					</div>
+
+					<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card  margin-bot"> 
+					<div class="row udalosti_padding">
+						<table class="table borderless">
+							<tr>
+								<td colspan="2" style="vertical-align: top; padding-top: 0px">
+									<h3 style="margin-bottom: 10px;">Pankrácká trasa <i id="heart_click" class="heart fa fa-heart" style="cursor: pointer"></i></h3>
+
+									<div style="margin-bottom: 10px">
+										<i class="fa fa-star fa-lg" style="margin-right: 5px"></i><i class="fa fa-star fa-lg" style="margin-right: 5px"></i><i class="fa fa-star fa-lg" style="margin-right: 5px"></i><i class="fa fa-star-half-o fa-lg" style="margin-right: 5px"></i><i class="fa fa-star-o fa-lg" style="margin-right: 5px"></i> <i>(5x hodnoceno)</i>
+									</div>
+									<a href="" data-toggle="modal" data-target="#info">Ohodnotit</a>
+								</td>
+								<td rowspan="4" class="visible-lg"><img src="images/podolska.jpg" class="img-responsive" width="100%"></td>
+							</tr>
+							<tr>
+								<td class="col-lg-1 col-xs-4"><strong>Kraj:</strong></td>
+								<td class="col-lg-6 col-xs-8">Praha</td>
+							</tr>
+							<tr>
+								<td><strong>Terén:</strong></td>
+								<td>Rovina, Asfalt, Travnatá plocha</td>
+							</tr>
+							<tr>
+								<td><strong>Délka:</strong></td>
+								<td>1,9 km</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top;"><strong>Popis:</strong></td>
+								<td colspan="2">Krátká procházka vhodná na každodenní procházení. U vody je spousta kačenek, jak v zimě tak v létě, při troše štěstí je možné potkat i nutrie. Jedná se o louku u vody, pe smůže být na volno, ale hlavně za teplých dnů je zde hodně lidí/psů. Pokud se Vám nechce chodit po louce, je možné využít cestu, která je ale v létě hojně využívána cyklisty a běžci - nedoporučuji psa na volno.</td>
+							</tr>
+						</table>
+
+						<strong>Mapa trasy</strong>
+						<br/><br/>
+						<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#info">Načíst aktuální polohu</button>
+						<br/><br/>
+						<img src="images/vylet.png" class="img-responsive" width="100%">
+						<br/>
+						<strong>Galerie výletníků  </strong>
+						<a href="" data-toggle="modal" data-target="#info">(Přidat fotografii)</a>
+						<br/><br/>
+
+						<div class="col-lg-12 margin-bot">
+							<div class="row">
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/play-edit/french.jpg">
+										<img src="images/play-edit/french.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/play-edit/rtw.jpg">
+										<img src="images/play-edit/rtw.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/play-edit/women.jpg">
+										<img src="images/play-edit/women.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/abby-edit/play.jpg">
+										<img src="images/abby-edit/play.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+								<!-- kvuli mezere mezi fotkami v malem rozliseni -->
+								<div class="col-xs-12 margin-bot visible-xs"></div>
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/play-edit/gold.jpg">
+										<img src="images/play-edit/gold.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+									<a rel="galler1" class="fancybox" href="images/abby-edit/water.jpg">
+										<img src="images/abby-edit/water.jpg" class="img-responsive" width="100%">
+									</a>
+								</div>
+							</div>
+						</div>
+
+
+						<table class="table borderless">
+							<tr>
+								<td>Tuto trasu má v oblíbených: <a href="" data-toggle="modal" data-target="#info">23 lidí</a></td>
+								<td class="menu_dog_prof" data-toggle="modal" data-target="#info">Sdílet: 
+										<i class="fa fa-comment fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+										<i class="fa fa-envelope fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+										<i class="fa fa-facebook fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+										<i class="fa fa-google-plus fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+										<i class="fa fa-twitter fa-lg" style="margin-right: 5px; cursor: pointer;"></i>
+								</td>
+							</tr>
+						</table>
+
+						<div class="col-lg-12 bottom">
+							<h3>Komentáře</h3>
+						</div>
+
+						<div class="col-lg-12 bottom menu_title">
+							<div class="row">
+								<div class="col-xs-4 col-sm-5 col-md-3 col-lg-2">
+									<img src="images/people-edit/me.jpg" class="img-responsive" width="100%">
+								</div>
+								<div class="col-xs-8 col-sm-7 col-md-9 col-lg-10">
+									<div class="comment">
+										<div class="bubble me">Napište komentář...</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12 bottom" style="padding-top: 10px; padding-bottom: 10px;">
+							<div class="row">
+								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4">
+									<div class="col-xs-6 col-lg-4">
+										<img src="images/people-edit/daniela.jpg" class="img-responsive" width="100%">
+									</div>
+									<div class="col-xs-6 col-lg-8">
+										<ul class="list-unstyled">
+											<li><strong><a href=""> Daniela Nováková</a></strong></li>
+											<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></li>
+											<li>22.2.2016 17:00</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-7 col-md-9 col-lg-8">
+									<div class="col-lg-12">
+										<p>Výlet se nám líbil, potkali jsme kachny i nutrie, Žofrej z nich byl celý unešený. Myslím, že se mu bude o kachničkách i zdát. Prostředí je příjemné, prostoru na vyběhání je hodně. Víc psů je pro nás plus. alespoň se Žófa vybije.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12 bottom" style="padding-top: 10px; padding-bottom: 10px;">
+							<div class="row">
+								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4">
+									<div class="col-xs-6 col-lg-4">
+										<img src="images/people-edit/eva.jpg" class="img-responsive" width="100%">
+									</div>
+									<div class="col-xs-6 col-lg-8">
+										<ul class="list-unstyled">
+											<li><strong><a href=""> Eva Radková</a></strong></li>
+											<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></li>
+											<li>2.2.2016 13:00</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-7 col-md-9 col-lg-8">
+									<div class="col-lg-12">
+										<p>Výlet se nám moc nelíbil, procházky ve městě jsou nic moc, ani nutrie jsme neviděli.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div></div>
+
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>	
+
+					<!-- konec hlavniho bloku -->
+				</div>
+			</div>			
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Fancybox -->
+		<script src="./js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="./js/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<script src="./js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="./js/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

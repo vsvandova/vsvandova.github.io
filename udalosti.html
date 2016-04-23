@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html">Psí seznamka</a></li>
+					<li><a href="vencici.html">Právě venčící</a></li>
+					<li><a href="trasy.html">Trasy</a></li>
+					<li class="active"><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="profil_panicka.html">Profil majitele</a></li>
+							<li ><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+		<!-- celkovy blok -->
+		<div class="container">
+			<div class="row">
+
+
+				<!-- hlavni blok -->
+				<div class="col-lg-12 ">
+					<h3>Události</h3>
+					<br/>
+
+					<!-- FILTR -->
+					<div class="row">
+						<form class="form-inline">
+							<!-- KRAJ -->
+							<div class="form-group">
+							  <label for="sel1">Kraj:</label> <br/>
+								<select class="selectpicker" data-width="180px" multiple data-none-selected-text="Nezáleží" data-selected-text-format="count" data-actions-box="true" data-live-search="true">
+								  <option>Hlavní město Praha</option>
+								  <option>Středočeský kraj</option>
+								  <option>Jihočeský kraj</option>
+								  <option>Plzeňský kraj</option>
+								  <option>Karlovarský kraj</option>
+								  <option>Ústecký kraj</option>		
+								  <option>Liberecký kraj</option>
+								  <option>Královehradecký kraj</option>
+								  <option>Pardubický kraj</option>
+								  <option>Kraj Vysočina</option>
+								  <option>Jihomoravský kraj</option>
+								  <option>Olomoucký kraj</option>								  		
+								  <option>Zlínský kraj</option>
+								  <option>Moraskoslezský kraj</option>		  
+								</select>
+							</div>
+
+							<!-- Kategorie -->
+							<div class="form-group">
+							  <label for="sel1">Kategorie:</label> <br/>
+								<select class="selectpicker" data-selected-text-format="count" data-width="180px" data-actions-box="true" multiple data-none-selected-text="Nezáleží">
+								  <option>Výstava</option>
+								  <option>Závod</option>
+								  <option>Zkouška</option>
+								  <option>Trénink</option>	
+								  <option>Venčení</option>
+								  <option>Seminář</option>
+								  <option>Sraz</option>
+								  <option>Ostatní</option>	 								    
+								</select>
+							</div>
+
+							<!-- PLEMENA -->
+							<div class="form-group" style="margin:5px 10px;">
+								 <label for="sel1">Plemena:</label> <br/>
+								<select class="selectpicker" data-width="180px" multiple data-none-selected-text="Nezáleží" data-selected-text-format="count" data-actions-box="true" data-live-search="true">
+									 <option>Šeltie</option>
+									 <option>Beagle</option>
+									 <option>Rhodéský ridgebag</option>
+									 <option>Německý špic</option>
+									 <option>Doga</option>  
+								</select>
+							</div>		
+
+							<!-- typ udalosti -->
+							<div class="form-group">
+							  <label for="sel1">Typ události:</label> <br/>
+								<select class="selectpicker" data-width="180px" data-actions-box="true">
+								  <option>Vše</option>
+								  <option>Soukromé</option>
+								  <option>Veřejné</option>	  
+								</select>
+							</div>			
+
+
+							<!-- Vyjadreny zajem -->
+							<div class="form-group">
+							  <label for="sel1">Vyjádřený zájem:</label> <br/>
+								<select class="selectpicker" data-selected-text-format="count" data-width="180px" data-actions-box="true" multiple data-none-selected-text="Nezáleží">
+								  <option>Zůčastním se</option>
+								  <option>Možná</option>
+								  <option>Odmítnuto</option>
+								  <option>Nevyjádřeno</option> 								    
+								</select>
+							</div>									
+ 
+  							<br/><br/>        
+						</form>
+					</div>
+
+
+					<!-- radit dle a ruzna zobrazeni -->
+					<div class="col-lg-12 mobile_padding" style="border-top: 1px solid #dddddd; padding-top: 20px; padding-bottom: 20px">
+						<div class="row">
+							<div class="col-xs-12 col-lg-2 margin-bot">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info"><i class="fa fa-plus-circle"></i> Založit událost</button>
+							</div>
+							<div class="orderby col-xs-8 col-lg-7">
+								<form class="form">
+								  <div class="form-group">
+								  <label for="email">Řadit dle:</label>
+										<select class="selectpicker" data-width="100px">
+											<option>Data</option>
+										</select>
+								  </div>
+								</form> 
+							</div>
+							<div class="orderby col-xs-4 col-lg-1">
+								<button type="button" class="btn btn-default btn-sm active"><i class="fa fa-caret-down"></i></button>
+									<button type="button" class="btn btn-default btn-sm"><i class="fa fa-caret-up"></i></button>
+							</div>
+							<div class="orderby col-xs-12 col-lg-2">
+								<div class="btn-group" role="group" aria-label="...">	
+									<a href="" role="button" class="btn btn-default fa fa-calendar" data-toggle="modal" data-target="#info"></a>
+								  <a href="udalosti.html" role="button" class="btn btn-default fa fa-th-list active" data-toggle="tooltip" title="Zobrazit události v řádcích"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12 col-md-12 col-xs-12 grey-bg card margin-bot" style="cursor: pointer;">
+						
+						<!-- jedna udalost -->
+						<div class="row bottom udalosti_padding">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" onclick="document.location = 'udalost_detail.html';">
+								<div class="row">
+									<img onclick="document.location = 'udalost_detail.html';" style="cursor: pointer;" src="images/play-edit/exhib-big.jpg" class="img-responsive" width="100%">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" onclick="document.location = 'udalost_detail.html';">
+								
+								<table class="table borderless table-condensed">
+									<tr>
+										<td colspan="2"><h4><a href="udalost_detail.html">3. mezinárodní výstava</a></h4></td>
+									</tr>
+									<tr>
+										<td><strong>Datum a čas:</strong></td>
+										<td>5.4.2016 v 8:00</td>
+									</tr>
+									<tr>
+										<td><strong>Místo:</strong></td>
+										<td>Praha Letňany</td>
+									</tr>
+									<tr>
+										<td><strong>Typ události:</strong></td>
+										<td>Veřejná událost</td>
+									</tr>	
+									<tr>
+										<td><strong>Kategorie:</strong></td>
+										<td>Výstavy</td>
+									</tr>
+								</table>
+
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" onclick="document.location = 'udalost_detail.html';">
+								<p style="text-align: justify;">Zveme Vás na již 3. mezinárodní výstavu konanou v tomto roce. Akce se bude konat ve výstavní hale Letňany. Posuzovat se budou všechna FCI plemena, od třídy štěňat až po třídu veteránů</p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<p><button style="width: 100%" type="submit" class="btn btn-success" data-toggle="modal" data-target="#info"><i class="fa fa-check"></i> Zůčastním se</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Možná</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Odmítnout</button></p>
+							</div>
+						</div>
+
+						<!-- jedna udalost -->
+						<div class="row bottom udalosti_padding">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<div class="row">
+									<img style="cursor: pointer;" src="images/play-edit/french-big.jpg" class="img-responsive" width="100%">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								
+								<table class="table borderless table-condensed">
+									<tr>
+										<td colspan="2"><h4><a href="">Slavné pondělky</a></h4></td>
+									</tr>
+									<tr>
+										<td><strong>Datum a čas:</strong></td>
+										<td>10.5.2016 v 15:00</td>
+									</tr>
+									<tr>
+										<td><strong>Místo:</strong></td>
+										<td>Praha</td>
+									</tr>
+									<tr>
+										<td><strong>Typ události:</strong></td>
+										<td>Veřejná událost</td>
+									</tr>	
+									<tr>
+										<td><strong>Kategorie:</strong></td>
+										<td>Venčení</td>
+									</tr>
+								</table>
+
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<p style="text-align: justify;">Již 10. pondělí pořádáme hromadnou schůzku v Praze s cílem řádného vyvenčení pejsků všech ras. Přidejte se k nám.</p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Zůčastním se</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Možná</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Odmítnout</button></p>
+							</div>
+						</div>						
+					
+
+
+						<!-- jedna udalost -->
+						<div class="row bottom udalosti_padding">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<div class="row">
+									<img style="cursor: pointer;" src="images/play-edit/gold-big.jpg" class="img-responsive" width="100%">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								
+								<table class="table borderless table-condensed">
+									<tr>
+										<td colspan="2"><h4><a href="">Vyvenčení na Šárce</a></h4></td>
+									</tr>
+									<tr>
+										<td><strong>Datum a čas:</strong></td>
+										<td>10.7.2016 ve 13:00</td>
+									</tr>
+									<tr>
+										<td><strong>Místo:</strong></td>
+										<td>Divoká Šárka</td>
+									</tr>
+									<tr>
+										<td><strong>Typ události:</strong></td>
+										<td>Soukromá událost</td>
+									</tr>	
+									<tr>
+										<td><strong>Kategorie:</strong></td>
+										<td>Venčení</td>
+									</tr>
+								</table>
+
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<p style="text-align: justify;">Co takhle zas nechat společně proběhnout naše psiska? Navrhuji 10.7., ale datum se může změnit. Přizpůsobím se.</p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Zůčastním se</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Možná</button></p>
+								<p><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#info">Odmítnout</button></p>
+							</div>
+						</div>						
+					</div>	
+
+				</div>	
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>			
+
+					<!-- konec hlavniho bloku -->
+				</div>
+			</div>			
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

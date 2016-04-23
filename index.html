@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="" data-toggle="modal" data-target="#info">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="" data-toggle="modal" data-target="#info" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="" data-toggle="modal" data-target="#info">Psí seznamka</a></li>
+					<li><a href="" data-toggle="modal" data-target="#info">Trasy</a></li>
+					<li><a href="" data-toggle="modal" data-target="#info">Události</a></li>
+
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+
+	<div class="container-fluid uvodni_img">
+	   <div class="">
+	   		<div class="col-lg-12" style="margin: 0 auto">
+	   			
+	   			<!-- registrovat se - vpravo -->
+	   			<div class="col-lg-12 menu_dog_prof mobile_padding hidden-xs">
+	   				<h1><a href="" data-toggle="modal" data-target="#info">Registrovat se</a> </h1>	
+	   			</div>
+	   			
+	   			<!-- sipka vitejte -->
+	   			<div class="col-lg-4 visible-lg">
+	   				<img src="images/sip.png" class="img-responsive" width="100%">
+	   			</div>
+
+	   			<!-- prihlasovaci formular -->
+	   			<div class="col-lg-4 bigpadding" style="border-radius: 25px; background-color: #50a5af; color: white">
+	   				<h3 style="margin-top: 0; margin-bottom: 30px">Přihlásit se</h3>	
+	   				<form action="demo_form.asp" method="post">
+						<div class="form-group">
+					    	<label>Email:</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+					  	</div>
+					  	<div class="form-group">
+					    	<label>Heslo:</label>
+					    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Heslo" required>
+					  	</div>
+					</form>
+
+					<div class="col-lg-12 margin-bot">
+						<div class="row">
+							<i data-toggle="modal" data-target="#info" style="cursor: pointer" class="fa fa-facebook-square fa-3x"></i>
+					  		<i data-toggle="modal" data-target="#info" style="cursor: pointer" class="fa fa-twitter-square fa-3x"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+	   						<button style="width: 100%" type="submit" class="btn btn-success" onclick="document.location = 'psi_seznamka.html';">Přihlásit se</button>
+	   					</div>
+	   				</div>
+	   				<div class="col-lg-6 menu_dog_prof registrovat">
+						<div class="row" data-toggle="modal" data-target="#info" style="padding-top: 10px; cursor: pointer;">
+							<p>Registrovat se</p>
+						</div>
+					</div>
+	   			</div>
+
+	   			<!-- registrovat se - vpravo -->
+	   			<div class="col-lg-12 menu_dog_prof mobile_padding visible-xs">
+	   				<h1><a href="" data-toggle="modal" data-target="#info">Registrovat se</a> </h1>	
+	   			</div>
+
+				<!-- volne misto -->
+				<div class="col-lg-1 centered"></div>
+	   			
+	   			<!-- hledate kamarada -->
+				<div class="col-lg-3 centered visible-lg">
+					<img src="images/find.png" width="80%">
+				</div>
+	   			
+	   			
+	   		</div>	
+
+
+	   					<!-- Modal info -->
+			<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+						</div>
+						<div class="modal-body">
+						  	<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+						</div>
+						<div class="modal-footer">
+						   <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		
+	   </div>
+	</div>
+
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

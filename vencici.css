@@ -1,0 +1,104 @@
+.map-venceni {
+  position: relative;
+  height:450px;
+  background-image:url('images/mapa_lg_vysak.png');
+  margin-bottom: 20px;
+ } 
+ .map-venceni .image {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    }
+    
+ .map-venceni .image.image1 {
+      top: 80px;
+      left: 400px;
+    }
+    
+ .map-venceni .image.image2 {
+      top: 200px;
+      left: 600px;
+    }
+
+ .map-venceni .image.image3 {
+      top: 50px;
+      left: 870px;
+    }
+
+ .map-venceni .image.image4 {
+      top: 210px;
+      left: 800px;
+    }    
+
+ .map-venceni .image.image5 {
+      top: 290px;
+      left: 600px;
+    }          
+
+ .map-venceni .image.image6 {
+      top: 150px;
+      left: 10px;
+    }
+
+ .map-venceni .image.image7 {
+      top: 280px;
+      left: 900px;
+    }    
+
+ .map-venceni .image.image8 {
+      top: 290px;
+      left: 200px;
+    }     
+
+@media screen and (max-width: 768px) {
+.map-venceni {
+  position: relative;
+  height:500px;
+  background-image:url('images/mapa_xs_vysak.png');
+ } 
+ .map-venceni .image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    }
+    
+ .map-venceni .image.image1 {
+      top: 80px;
+      left: 60px;
+    }
+    
+ .map-venceni .image.image2 {
+      top: 200px;
+      left: 190px;
+    }
+
+ .map-venceni .image.image3 {
+      top: 450px;
+      left: 870px;
+    }
+
+ .map-venceni .image.image4 {
+      top: 400px;
+      left: 160px;
+    }    
+
+ .map-venceni .image.image5 {
+      top: 290px;
+      left: 160px;
+    }   
+
+ .map-venceni .image.image6 {
+      top: 20px;
+      left: 150px;
+    }
+
+ .map-venceni .image.image7 {
+      top: 210px;
+      left: 40px;
+    }    
+
+ .map-venceni .image.image8 {
+      top: 290px;
+      left: 100px;
+    }                  
+}

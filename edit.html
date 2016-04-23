@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html" >Psí seznamka</a></li>
+					<li><a href="vencici.html">Právě venčící</a></li>
+					<li><a href="trasy.html">Trasy</a></li>
+					<li><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li ><a href="profil_panicka.html">Profil majitele</a></li>
+							<li class="active"><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+		<!-- Levý blok -->
+		<!-- Profilova fotka + hlavicka + O mne -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1">
+				</div>
+				<div class="col-lg-10  grey-bg">
+					
+					<!-- Hlavicka  -->
+					<div class="row card margin-bot grey-bg">
+
+					<!-- popis  -->
+						<div class="col-lg-4 col-xs-12 col-md-12 col-lg-push-4 margin-tp margin-bot mobile_padding" style="padding-right: 50px;">
+							<img src="images/abby-circle.png" class="img-circle center img-responsive" width="85%">
+							<h3 style="text-align: center;">Abbygail Jewel od Ritušky</h3>
+							<h4 style="text-align: center;">Šeltie</h4>
+						</div>
+
+						<!-- fotka -->
+						<div class="col-lg-4 col-xs-12 col-md-12 col-lg-pull-4 margin-tp margin-bot visible-lg">
+							<p><h4>Nastavení Abby</h4></p>
+						</div>
+
+						<!-- editace  -->
+						<div class="col-lg-4 col-xs-12 col-md-12 text-right hidden-xs">
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+							<a class="hidden-xs des" href="profil_abby.html">Ukončit úpravy</span>
+						</div>
+						<div class="col-lg-4 col-xs-12 col-md-12 text-right visible-xs">
+							<a class="des" href="profil_abby.html">Ukončit úpravy</a></span>
+						</div>
+					</div>
+				
+
+					<!-- Menu profil psa -->
+					<div class="row">
+						<div class="col-lg-12 margin-bot">
+							<div class="row">
+                                <ul class="nav nav-pills hidden-xs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#obecne" aria-controls="obecne" role="tab" data-toggle="tab">Obecné</a></li>
+                                    <li role="presentation"><a href="#omne" aria-controls="omne" role="tab" data-toggle="tab">O mně</a></li>
+                                    <li role="presentation"><a href="#koho" aria-controls="koho" role="tab" data-toggle="tab">Koho bych rád</a></li>
+                                    <li role="presentation"><a href="#venceni" aria-controls="venceni" role="tab" data-toggle="tab">Venčení</a></li>
+                                </ul>
+                                <ul class="nav nav-pills visible-xs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#obecne" aria-controls="obecne" role="tab" data-toggle="tab">Obecné</a></li>
+                                    <li role="presentation"><a href="#omne" aria-controls="omne" role="tab" data-toggle="tab">O mně</a></li>
+                                    <li role="presentation" class="dropdown visible-xs">
+				    					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další <span class="caret"></span></a>
+				    					<ul class="dropdown-menu">
+		                                    <li role="presentation"><a href="#koho" aria-controls="koho" role="tab" data-toggle="tab">Koho bych rád</a></li>
+		                                    <li role="presentation"><a href="#venceni" aria-controls="venceni" role="tab" data-toggle="tab">Venčení</a></li>
+				    					</ul>
+			  						</li>
+                                </ul>
+
+							</div>
+						</div>
+					
+
+                                <!-- Tab panes -->
+                        <div class="tab-content">
+                        	<div role="tabpanel" class="tab-pane active" id="obecne">
+                        		<div class="row">
+	                        		<div class="col-lg-12 card grey-bg margin-bot">
+		                        		<div class="row">
+		                        			<div class="col-lg-12 margin-bot card menu_title">
+		                        				<strong>Obecné</strong>
+		                        			</div>
+										</div>
+
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Zkrácené jméno</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Abby
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Oficiální jméno</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Abbygail Jewel od Ritušky
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Datum narození</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												21.3.2015
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Pohlaví</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Fena
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Plemeno</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Šeltie
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Velikost</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Malá
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 margin-bot">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Místo</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Praha 4 Vyšehrad
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#obecne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-lg-12 mobile_padding">
+											<img src="images/vysak2-map.jpg" class="img-responsive" width="100%">
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<div role="tabpanel" class="tab-pane" id="omne">
+                        		<div class="row">
+	                        		<div class="col-lg-12 card margin-bot">
+		                        		<div class="row">
+		                        			<div class="col-lg-12 margin-bot card menu_title">
+		                        				<strong>O mně</strong>
+		                        			</div>
+										</div>
+
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>O mně</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Jsem chlupatá koule svých páníčků. Nejraději mám tenisáky a dobré masíčko. Na granulky se můžu vybodnout, tak mi dávají syrové maso se zeleninou. Zelenina taky celkem nic moc, ale brambory jsou dobré.
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Koníčky</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Agility, Obedience, Výstavy
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Hmotnost</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												5 kg
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Mám rád děti</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ignoruji je
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Mám rád štěňata</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+													<div id="yes" class="collapse in">
+														Ano
+													</div>
+													<div id="no" class="collapse">
+															<div class="col-lg-12">
+																<div class="row">
+																	<div class="col-lg-4">
+																		<div class="row">
+																			<div class="form-group">
+																				<select class="selectpicker" data-width="180px" data-actions-box="true">
+																					<option>Ano</option>
+																					<option>Ne</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																
+																	<div class="col-lg-2">
+																		<div class="row">
+																			<div id="pen5" class="collapse in"><button data-target="#yes, #no" data-toggle="collapse"  type="submit" class="btn btn-success">Uložit</button></div>
+																		</div>
+																	</div>
+
+
+																	<div class="col-lg-4">
+																		<div class="row">
+																			<div id="pen5" class="collapse in"><button data-target="#yes, #no" data-toggle="collapse"  type="submit" class="btn btn-default">Zrušit</button></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+													</div>
+
+												</div>
+												<div class="collapse in col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a data-target="#yes, #no" data-toggle="collapse"><i class="fa fa-pencil"></i></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Mohu chodit na volno</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ano
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak moc jsem aktinví</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ráda běhám, ale třeštiprdla nemusím
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+															<div class="stupnice">
+																<ul class="list-inline list-unstyled">
+																	<li><span class="horni_bubbles">
+										  							<i class="icon-liny" style="font-size: 40px; vertical-align: middle;"></i>
+																	</span></li>
+																	<li><div class="point active">&nbsp;</div></li>
+																	<li><div class="point active">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><span class="horni_bubbles">
+										  							<i class="icon-active" style="font-size: 40px; vertical-align: middle;"></i>
+																	</span></li>
+																</ul>
+																<div class="popis-stupne">Méně aktivní</div>
+															</div>
+														</div>
+															<i class="icon-liny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+															<p class="hidden-lg">Méně aktivni</p>		
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Chování k ostatním psům</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scare-dog" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-dog-1" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Potřebuji se rozkoukat</div>
+																</div>
+															</div>
+																<i class="icon-friendly-dog-1 hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Potřebuji se rozkoukat</p>		
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Chování k lidem</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Nemám ráda, když mě lidé chovají, jinak je ignoruji.
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scared-men" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-men" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Nevšímejte si mě</div>
+																</div>
+															</div>
+																<i class="icon-scared-men hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Nevšímejte si mě</p>
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak jsem poslušná</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Umím přivolání a základní povely.
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-neposlusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-poslusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Základní povely</div>
+																</div>
+															</div>
+																<i class="icon-poslusny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Základní povely</p>
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#omne"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+							<div role="tabpanel" class="tab-pane" id="koho">
+                        		<div class="row">
+	                        		<div class="col-lg-12 card margin-bot">
+		                        		<div class="row">
+		                        			<div class="col-lg-12 margin-bot card menu_title">
+		                        				<strong>Koho bych rád</strong>
+		                        			</div>
+										</div>
+
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Kdo se mi líbí</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Mám ráda menší pejsky, velkých se bojím a většinou si se mnou nechtějí hrát. Strašně ráda běhám a honím ostatní.
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Věk</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												0 - 5 let
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Pohlaví</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Nezáleží
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Velikost</strong>
+												</div>
+												<div class="col-lg-1 col-xs-3  edit_row padding_bot_edit padding_rl_edit" style="color: #666666; cursor: pointer">
+													<img src="images/icons/small_select.png" class="img-responsive" width="100%">
+												</div>
+												<div class="col-lg-1 col-xs-3  edit_row padding_bot_edit padding_rl_edit" style="color: #666666; cursor: pointer">
+													<img src="images/icons/middle_stroke.png" class="img-responsive" width="100%">
+												</div>
+												<div class="col-lg-1 col-xs-3  edit_row padding_bot_edit padding_rl_edit" style="color: #666666; cursor: pointer">
+													<img src="images/icons/large_stroke.png" class="img-responsive" width="100%">
+												</div>
+												<div class="col-lg-5 col-xs-10">
+													<p></p>
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Oblíbená plemena</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Šeltie
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Měl bys mít rád štěňata</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ne
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Měl bys mít rád děti</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ne
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Měl bys moci chodit na volno</strong>
+												</div>
+												<div class="col-lg-8 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ano
+												</div>
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak moc máš být</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Ráda běhám, ale třeštiprdla nemusím
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+															<div class="stupnice">
+																<ul class="list-inline list-unstyled">
+																	<li><span class="horni_bubbles">
+										  							<i class="icon-liny" style="font-size: 40px; vertical-align: middle;"></i>
+																	</span></li>
+																	<li><div class="point active">&nbsp;</div></li>
+																	<li><div class="point active">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><div class="point">&nbsp;</div></li>
+																	<li><span class="horni_bubbles">
+										  							<i class="icon-active" style="font-size: 40px; vertical-align: middle;"></i>
+																	</span></li>
+																	<li><span class="horni_bubbles">
+										  							<i class="fa fa-times-circle" style="vertical-align: middle;"></i>
+																	</span></li>
+																</ul>
+																<div class="popis-stupne">Méně aktivní</div>
+															</div>
+														</div>
+															<i class="icon-liny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+															<p class="hidden-lg">Méně aktivni</p>		
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak se máš chovat k ostatním psům</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scare-dog" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-dog-1" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><span class="horni_bubbles">
+										  							<i class="fa fa-times-circle" style="vertical-align: middle;"></i>
+																	</span></li>
+																	</ul>
+																	<div class="popis-stupne">Potřebuji se rozkoukat</div>
+																</div>
+															</div>
+																<i class="icon-friendly-dog-1 hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Potřebuji se rozkoukat</p>		
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak se máš chovat k lidem</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Panička respektuje psí osobnost, takže na tom nezáleží.
+												</div>
+
+												<div class="col-lg-5 col-xs-10 right">
+													<div class="row">
+														Nezáleží
+														<span class="horni_bubbles">
+										  							<i class="fa fa-plus-circle" style="vertical-align: middle;"></i>
+																	</span>
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Jak máš být poslušný</strong>
+												</div>
+												<div class="col-lg-3 col-xs-10  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												Tak, abychom si mohli zaběhat na volno.
+												</div>
+
+												<div class="col-lg-5 col-xs-10">
+													<div class="row">
+														<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-neposlusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-poslusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><span class="horni_bubbles">
+										  							<i class="fa fa-times-circle" style="vertical-align: middle;"></i>
+																	</span></li>
+																	</ul>
+																	<div class="popis-stupne">Základní povely</div>
+																</div>
+															</div>
+																<i class="icon-poslusny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Základní povely</p>
+													</div>					
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="venceni">
+                        		<div class="row">
+	                        		<div class="col-lg-12 card margin-bot">
+		                        		<div class="row">
+		                        			<div class="col-lg-12 margin-bot card menu_title">
+		                        				<strong>Venčení</strong>
+		                        			</div>
+										</div>
+										<div class="col-lg-12 margin-bot edit_row">
+											<div class="row">
+												<strong style="font-style: italic;">Zde nastavujete venčení pouze pro daného pejska, pokud máte více psů a chcete všechny venčit ve stejnou dobu, přejděte na <a href="">Nastavení profilu majitele</a></strong>
+											</div>
+										</div>
+
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Pondělí</strong>
+												</div>
+												<div class="col-lg-2 col-xs-12  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												10:00 - 11:00
+												</div>
+												<div class="col-lg-1 col-xs-10 hidden-xs edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												+
+												</div>
+												<div class="col-lg-2 col-xs-11  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												17:00 - 19:00
+												</div>
+
+												<div class="col-lg-3 hidden-xs">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Úterý</strong>
+												</div>
+												<div class="col-lg-2 col-xs-11  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												10:00 - 11:00
+												</div>
+	
+												<div class="col-lg-6 hidden-xs">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Středa</strong>
+												</div>
+
+												<div class="col-lg-8 col-xs-11">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Čtvrtek</strong>
+												</div>
+												<div class="col-lg-2 col-xs-12  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												10:00 - 11:00
+												</div>
+												<div class="col-lg-1 hidden-xs  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												+
+												</div>
+												<div class="col-lg-2 col-xs-11  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												17:00 - 19:00
+												</div>
+
+												<div class="col-lg-3 hidden-xs">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Pátek</strong>
+												</div>
+
+												<div class="col-lg-8 col-xs-11">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12 bottom">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Sobota</strong>
+												</div>
+
+												<div class="col-lg-8 col-xs-11">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+										<!-- RADEK -->
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-3 col-xs-12  edit_row padding_top_edit padding_rl_edit">
+													<strong>Neděle</strong>
+												</div>
+
+												<div class="col-lg-2 col-xs-11  edit_row padding_bot_edit padding_rl_edit" style="color: #666666">
+												17:00 - 19:00
+												</div>
+
+												<div class="col-lg-6 hidden-xs">
+													<p></p>
+												</div>
+
+												<div class="col-lg-1 col-xs-1  edit_row padding_bot_edit padding_rl_edit">
+													<a href="#koho"><span class="fa fa-pencil"></span></a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+					</div>
+
+
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+								   	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+									</div>
+										<div class="modal-body">
+									   		<p>Toto je pouze testovací verze, v této verzi není tato funkce dostupná</p>  
+										</div>
+									 	<div class="modal-footer">
+									 		<button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+									 	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
