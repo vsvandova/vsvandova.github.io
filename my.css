@@ -274,7 +274,7 @@ tr.border_bottom td {
   position: relative;
   height: 950px;
   width: 100%;
-  background-image:url('images/kuk.jpg');
+  background-image:url('images/kuk.jpg') no-repeat;
     background-size:100% auto;
   margin-bottom: 20px;
  } 
