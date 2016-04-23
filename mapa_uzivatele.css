@@ -1,7 +1,7 @@
 .map {
   position: relative;
   height:600px;
-  background-image:url('images/mapa_lg_vysak.png');
+  background-image:url('images/mapa_lg_vysak.jpg');
  } 
  .map .image {
     position: absolute;
@@ -38,7 +38,7 @@
 .map {
   position: relative;
   height:500px;
-  background-image:url('images/mapa_xs_vysak.png');
+  background-image:url('images/mapa_xs_vysak.jpg');
  } 
  .map .image {
     position: absolute;
