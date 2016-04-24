@@ -171,12 +171,12 @@
   										<div class="row">
 
 		  									<div class="col-lg-3 col-xs-4">
-		  										<img src="images/dog-edit/diona.jpg" class="center img-responsive" width="100%">
+		  										<img src="images/dog-edit/rex.jpg" class="center img-responsive" width="100%">
 		  									</div>
 		  									<div class="col-lg-7 col-xs-6">
 		  										<div class="row">
-		  											<h4 style="padding-bottom: 5px">Diona</h4>
-		  											<p>Kříženec (4 roky)       <i class="fa fa-venus"></i></p>
+		  											<h4 style="padding-bottom: 5px">Rex</h4>
+		  											<p>Bígl (1 rok)       <i class="fa fa-venus"></i></p>
 		  											
 		  										</div>
 		  									</div>
@@ -668,7 +668,7 @@
 										  									<div class="col-lg-7 col-xs-6">
 										  										<div class="row">
 										  											<h4 style="padding-bottom: 5px">Rex</h4>
-										  											<p>Biegel (1 rok)       <i class="fa fa-mars"></i></p>
+										  											<p>Bígl (1 rok)       <i class="fa fa-mars"></i></p>
 										  											
 										  										</div>
 										  									</div>
@@ -684,21 +684,30 @@
 																	<td>
 																		<div class="col-lg-4 col-xs-12 margin-bot">
 																			<div class="row">
-																				<button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment"></i> Napsat zprávu</button>
+																				<button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-comment" data-toggle="modal" data-target="#info"></i> Napsat zprávu</button>
 																			</div>
 																		</div>
 																		<div class="col-lg-4 col-xs-12 margin-bot">
 																			<div class="row">
-																				<button style="width: 100%;" type="submit" class="btn btn-default"><i class="fa fa-map-marker"></i> Žádost o polohu</button>
+																			
+																					<button style="width: 100%;" data-toggle="collapse" data-target="#req" type="submit" class="btn btn-default"><i class="fa fa-map-marker"></i> Žádost o polohu</button>
+																		
 																			</div>
 																		</div>
 																		<div class="col-lg-4 col-xs-12">
 																			<div class="row">
-																				<button style="width: 100%" type="submit" class="btn btn-default"><i class="fa fa-user"></i> Žádost o přátelství</button>
+																				<button style="width: 100%" type="submit" class="btn btn-default"><i class="fa fa-user" data-toggle="modal" data-target="#info"></i> Žádost o přátelství</button>
 																			</div>
 																		</div>
 																	</td>
-																</tr>									
+																</tr>	
+																<tr>
+																	<td>
+																		<div id="req" class="collapse bg-success">
+																			Žádost o polohu odeslána.
+																		</div>
+																	</td>
+																</tr>								
 		  																			
 															</table>
 												        </div>
@@ -736,6 +745,15 @@
 						</span> Uživatel je vidět na mapě.				
 					</div>
 
+
+
+				<!-- zadost o polohu -->
+					<div class="modal fade" id="zadost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+							</div>
+					</div>	
 
 
 					<!-- Modal info -->
