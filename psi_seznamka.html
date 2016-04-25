@@ -384,7 +384,7 @@
 							</ul>
 						</div>
 
-						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;" onclick="document.location = 'fifi.html';">
+						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;">
 							<table class="table borderless table-condensed" style="margin-top: 10px; padding-bottom: 0px">
 								<tr>
 									<td><u><a href="fifi.html"><h4>Fifinka od Růžičky</h4></a></u></td>
@@ -407,7 +407,7 @@
 								<li><span class="icon-scare-dog" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
 								<li><span class="icon-friendly-men" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
 								<li><span class="icon-no-free" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
-								<li><span class="fa fa-commenting fa-3x" style="cursor: pointer; color: #02c39a; padding-bottom: 15px" id="pohlavi"></span></li>
+								<li><span data-toggle="modal" data-target="#message" class="fa fa-commenting fa-3x" style="cursor: pointer; color: #02c39a; padding-bottom: 15px" id="pohlavi"></span></li>
 							</ul>
 
 							<ul class="pohlavi list-unstyled visible-lg">
@@ -421,6 +421,34 @@
 									<img src="images/icons/small.png" width="50px">
 								</li>
 							</ul>
+
+
+													<!-- Odeslat zpravu-->
+							<div class="modal fade" id="message" role="dialog">
+							    <div class="modal-dialog">
+													    
+							     <!-- Modal content-->
+							    	<div class="modal-content">
+									    <div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Napsat zprávu</h4>
+										</div>
+										<div class="modal-body">
+											<form class="form">
+											  <div class="form-group">
+											    <label for="exampleInputName2">Komu:</label>
+											    <input disabled type="text" class="form-control" id="exampleInputName2" placeholder="Fifinka od Růžičky (David Smetana)">
+											  </div>
+											  <textarea class="form-control" rows="3">Ahoj, líbí se mi tvůj pejsek, nechceš se setkat?</textarea>
+											</form>
+										</div>   
+										<div class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Odeslat</button>   
+										</div>	 
+								    </div>	      
+							    </div>
+							</div>
+
 						</div>
 
 						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;">
@@ -587,7 +615,7 @@
 							</ul>
 						</div>
 
-						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;" onclick="document.location = 'diona.html';">
+						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;">
 							<table class="table borderless table-condensed" style="margin-top: 10px; padding-bottom: 0px">
 								<tr>
 									<td><u><a href="diona.html"><h4>Diona</h4></a></u></td>
@@ -611,7 +639,7 @@
 								<li><span class="icon-scare-dog" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
 								<li><span class="icon-friendly-men" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
 								<li><span class="icon-navolno" id="pohlavi" style="font-size: 42px; padding-right: 8px"></span></li>
-								<li><span class="fa fa-commenting fa-3x" style="cursor: pointer; color: #02c39a; padding-bottom: 15px" id="pohlavi"></span></li>
+								<li><span data-toggle="modal" data-target="#message" class="fa fa-commenting fa-3x" style="cursor: pointer; color: #02c39a; padding-bottom: 15px" id="pohlavi"></span></li>
 							</ul>
 
 							<ul class="pohlavi list-unstyled visible-lg">
@@ -626,6 +654,32 @@
 								</li>
 							</ul>
 						</div>
+
+													<!-- Odeslat zpravu-->
+							<div class="modal fade" id="message" role="dialog">
+							    <div class="modal-dialog">
+													    
+							     <!-- Modal content-->
+							    	<div class="modal-content">
+									    <div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Napsat zprávu</h4>
+										</div>
+										<div class="modal-body">
+											<form class="form">
+											  <div class="form-group">
+											    <label for="exampleInputName2">Komu:</label>
+											    <input disabled type="text" class="form-control" id="exampleInputName2" placeholder="Diona (Jana Cílková)">
+											  </div>
+											  <textarea class="form-control" rows="3">Ahoj, líbí se mi tvůj pejsek, nechceš se setkat?</textarea>
+											</form>
+										</div>   
+										<div class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Odeslat</button>   
+										</div>	 
+								    </div>	      
+							    </div>
+							</div>
 
 
 						<div class="profil-seznamka col-xs-12 col-sm-4 col-lg-3 grey-bg" style="cursor: pointer;">
@@ -668,7 +722,7 @@
 							</ul>
 						</div>
 
-						<div class="col-lg-12" style="text-align: right;">
+						<div class="col-lg-12" style="text-align: right; float: right">
 							<ul class="pagination">
 								<li class="active"><a href="">1</a></li>
 								<li><a href="">2</a></li>
