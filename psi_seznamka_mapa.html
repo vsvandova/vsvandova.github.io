@@ -192,8 +192,14 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-md-2 col-lg-2">
-								<a class="btn btn-primary text-right" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<div class="col-md-2 col-lg-2 col-xs-12">
+								<a class="btn btn-primary text-right" role="button" data-toggle="modal" data-target="#info-search">
+									Hledat
+								</a>
+							</div>
+							<br/>
+							<div class="col-md-2 col-lg-10 col-xs-12" style="text-align: right;">
+								<a class="text-right" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 									Rozšířené nastavení
 								</a>
 							</div>
@@ -201,6 +207,24 @@
 						</from>
 					</div>
 
+
+										<!-- Modal info -->
+					<div class="modal fade" id="info-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Vyhledávání není dostupné</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze uživatelského rozhraní, vyhledávání zde nefunguje. Zkuste prosím splnit úkol bez použití vyhledání.</p>
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>	
 					<div class="collapse mobile_padding" id="collapseExample">
 						<div class="well no-gradient">
 							<form class="form-inline">
