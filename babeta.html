@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap test 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="my.css">
+	<link href="https://file.myfontastic.com/wntjKE4oYu34e4Xdo8v6SC/icons.css" rel="stylesheet">
+		<!-- FancyBox -->
+	<link rel="stylesheet" href="./js/fancybox/helpers/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css">
+</head>
+<body>
+
+	<!-- Hlavní menu -->
+	<nav class="navbar">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="psi_seznamka.html">Waldog</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Prava strana menu -->
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- Search na mobilu rovnou viditelny -->
+					<li>
+						<div class="col-lg-12 hidden-lg hidden-md visible-s visible-xs">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			   				<span class="input-group-btn">
+			       				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      			</span>
+							</div>
+						</div>
+					</li>
+
+					<!-- Search-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> <span class="fa fa-search"></span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<div class="col-lg-12">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Hledat psy, lidi, trasy a události...">
+			      				<span class="input-group-btn">
+			        				<button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+			      				</span>
+								</div>
+							</div>
+						</ul>
+					</li>
+
+					<li><a href="psi_seznamka.html" class="icon"><span class="fa fa-home"></span><span class="hidden-lg hidden-md visible-xs"> Domů</span></a></li>
+					<li><a href="psi_seznamka.html">Psí seznamka</a></li>
+					<li><a href="vencici.html">Právě venčící</a></li>
+					<li><a href="trasy.html">Trasy</a></li>
+					<li><a href="udalosti.html">Události</a></li>
+
+					<!-- Upozorneni -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-bell"></span><span class="hidden-lg hidden-md visible-xs"> Upozornění</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Upozornění</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádná upozornění</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+
+					<!-- Zpravy -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"  aria-haspopup="true"  aria-expanded="false"><span class="fa fa-comments"></span><span class="hidden-lg hidden-md visible-xs"> Zprávy</span></a>
+
+						<ul class="ddmenu dropdown-menu col-lg-12">
+							<li><p style="padding-left: 20px; padding-top: 10px"><strong>Příchozí zprávy</strong></p></li>
+							<li role="separator" class="divider"></li>
+							<li><p style="padding-left: 20px">Nemáte žádné zprávy</p></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Zobrazit vše</a></li>
+						</ul>
+					</li>
+
+					<!-- Uzivatel -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false"> Veronika <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="profil_panicka.html">Profil majitele</a></li>
+							<li ><a href="profil_abby.html">Profil Abby</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#info">Profil Anub</a></li>
+							<li><a href="profil_panicka.html#obltrasy">Oblíbené trasy</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="profil_panicka.html">Nastavení</a></li>
+							<li><a href="index.html">Odhlásit se</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+		<!-- Levý blok -->
+		<!-- Profilova fotka + hlavicka + O mne -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-1">
+				</div>
+				<div class="col-lg-9  grey-bg">
+					<div class="row card margin-bot">
+
+						<!-- Profilova fotka  -->
+						<div class="col-lg-4 col-xs-12 mobile_padding" style="padding-top: 20px">
+							<img src="images/dog-edit/babeta.jpg" class="img-responsive" width="100%">
+						</div>
+												<!-- Hlavicka -->
+						<div class="col-lg-8 col-xs-12 col-md-12 mobile_padding">
+							<table class="table borderless table-responsive table-condensed col-lg-10 col-xs-12 col-md-12">
+								<tr>
+		  							<td colspan="2" class="neco col-lg-8 col-xs-6 col-md-6"><h3>Babetka <small>(Babu)</small></h3></td>
+		    						<td></td>
+		    						<td class="centered visible-lg col-lg-4"><img src="images/all_middle.png" class="img-responsive" width="40%"></td>    
+		  						</tr>
+		  						<tr>
+		  							<td class="col-lg-4 col-xs-7">Kříženec   <span class="fa fa-venus"></span></td>
+		  							<td colspan="2" rowspan="2" class="hidden-lg"><img src="images/all_middle.png" class="img-responsive" width="50%"></td>  
+		  						</tr>
+		  						<tr><td colspan="2">10 let</td></tr>
+								<tr><td colspan="2"><a href="#kde_bydlim">Praha</a></td></tr>
+								<tr>
+									<td class="col-lg-5 col-xs-7">Mám zájem o seznámení:</td>
+									<td colspan="2"><strong>Ano</strong></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="col-lg-5 col-xs-7">Dnešní venčení (Pondělí):</td>
+									<td colspan="2"><a href="#venceni" aria-controls="venceni" role="tab" data-toggle="tab">12:00 - 13:00</a></td>
+									<td class="right col-xs-3 hidden-xs" data-toggle="modal" data-target="#info"><button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-user"></i> Žádost o přátelství</button></span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="right col-xs-3 hidden-xs" ><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#message"><i class="fa fa-comment"></i> Napsat zprávu</button></span></td>
+								</tr>		
+								<tr class="visible-xs right">
+									<td colspan="3" class="right col-xs-12 hidden-lg" data-toggle="modal" data-target="#info"><button style="width: 100%" type="submit" class="btn btn-success"><i class="fa fa-user"></i> Žádost o přátelství</button></span></td>
+								</tr>		
+								<tr class="visible-xs right">
+									<td colspan="3" class="right col-xs-12 hidden-lg"><button style="width: 100%" type="submit" class="btn btn-default" data-toggle="modal" data-target="#message"><i class="fa fa-comment"></i> Napsat zprávu</button></span></td>
+								</tr>														
+							</table>
+						</div>
+					</div>
+
+												<!-- Odeslat zpravu-->
+							<div class="modal fade" id="message" role="dialog">
+							    <div class="modal-dialog">
+													    
+							     <!-- Modal content-->
+							    	<div class="modal-content">
+									    <div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Napsat zprávu</h4>
+										</div>
+										<div class="modal-body">
+											<form class="form">
+											  <div class="form-group">
+											    <label for="exampleInputName2">Komu:</label>
+											    <input disabled type="text" class="form-control" id="exampleInputName2" placeholder="Eva Snílková (Babetka)">
+											  </div>
+											  <textarea class="form-control" rows="3">Ahoj, líbí se mi tvůj pejsek, nechceš se setkat?</textarea>
+											</form>
+										</div>   
+										<div class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal">Odeslat</button>   
+										</div>	 
+								    </div>	      
+							    </div>
+							</div>
+				
+
+					<!-- Menu profil psa -->
+					<div class="row">
+						<div class="col-lg-12 margin-bot">
+							<div class="row">
+                                <ul class="nav nav-pills hidden-xs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#omne" aria-controls="omne" role="tab" data-toggle="tab">O mně</a></li>
+                                    <li role="presentation"><a href="#koho" aria-controls="koho" role="tab" data-toggle="tab">Koho bych ráda</a></li>
+                                    <li role="presentation"><a href="#venceni" aria-controls="venceni" role="tab" data-toggle="tab">Venčení</a></li>
+                                    <li role="presentation"><a href="#opanickovi" aria-controls="opanickovi" role="tab" data-toggle="tab">O páníčkovi</a></li>
+                                    <li role="presentation"><a href="#foto1" aria-controls="foto1" role="tab" data-toggle="tab">Fotogalerie</a></li>
+                                    <li role="presentation"><a href="#obltrasy" aria-controls="obltrasy" role="tab" data-toggle="tab">Oblíbené trasy</a></li>
+                                    <li role="presentation"><a href="#pratele" aria-controls="pratele" role="tab" data-toggle="tab">Přátelé</a></li>
+
+                                    <li role="presentation" class="dropdown">
+				    					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další <span class="caret"></span></a>
+				    					<ul class="dropdown-menu">
+		                                    <li role="presentation"><a href="#sledujici" aria-controls="sledujici" role="tab" data-toggle="modal" data-target="#info">Sledující</a></li>
+		                                    <li role="presentation"><a href="#historie" aria-controls="historie" role="tab" data-toggle="modal" data-target="#info">Historie aktivit</a></li>
+				    					</ul>
+			  						</li>
+                                </ul>
+
+                                <ul class="nav nav-pills visible-xs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#omne" aria-controls="omne" role="tab" data-toggle="tab">O mně</a></li>
+                                    <li role="presentation"><a href="#koho" aria-controls="koho" role="tab" data-toggle="tab">Koho bych ráda</a></li>
+
+                                    <li role="presentation" class="dropdown">
+				    					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Další <span class="caret"></span></a>
+				    					<ul class="dropdown-menu">
+		                                    <li role="presentation"><a href="#venceni" aria-controls="venceni" role="tab" data-toggle="tab">Venčení</a></li>
+		                                    <li role="presentation"><a href="#opanickovi" aria-controls="opanickovi" role="tab" data-toggle="tab">O páníčkovi</a></li>
+		                                    <li role="presentation"><a href="#foto" aria-controls="foto" role="tab" data-toggle="tab">Fotogalerie</a></li>
+		                                    <li role="presentation"><a href="#obltrasy" aria-controls="obltrasy" role="tab" data-toggle="tab">Oblíbené trasy</a></li>
+		                                    <li role="presentation"><a href="#pratele" aria-controls="pratele" role="tab" data-toggle="tab">Přátelé</a></li> 
+		                                    <li role="presentation"><a href="#sledujici" aria-controls="sledujici" role="tab" data-toggle="modal" data-target="#info">Sledující</a></li>
+		                                    <li role="presentation"><a href="#historie" aria-controls="historie" role="tab" data-toggle="modal" data-target="#info">Historie aktivit</a></li>
+				    					</ul>
+			  						</li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="omne">
+                                        
+                                        <!-- O mně title -->
+										<div class="row card menu_title">
+											<div class="col-lg-12 mobile_padding">
+												<div class="col-lg-12 col-md-12 col-xs-12">
+													<strong>O mně</strong>
+												</div>	
+											</div>
+										</div>
+
+
+										<!-- O mně -->
+										<div class="row grey-bg card margin-bot mobile_padding">
+											<div class="col-lg-12 col-xs-12 col-md-12 margin-tp mobile_padding">				
+												<table class="table table-responsive">
+
+													<tr>
+														<td class="spec_table" colspan="4"><p class="mobile_padding" style="text-align: justify;">Už jsem trochu starší, tak se mi hodí klidnější pejsek.</p></td>
+														<td class="spec_table col-lg-1">
+														<div id="pen" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+
+													<tr>
+														<td class="col-lg-3 col-md-6 col-xs-3 centered"><strong>Koníčky</strong></td>
+														<td colspan="3">Agility, Obedience, Výstavy</td>
+														<td><div id="pen2" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Hmotnost</strong></td>
+														<td colspan="3">5 kg</td>
+														<td><div id="pen3" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Mám rád děti</strong></td>
+														<td colspan="3">Ignoruji je</td>
+														<td><div id="pen4" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Mám rád štěňata</strong></td>
+														<td colspan="3"><div id="yes" class="collapse in">Ano</div></td>
+														<td><div id="pen5" class="collapse"><a data-target="#yes, #no" data-toggle="collapse"><i class="fa fa-pencil"></i></a>
+														</div></td>
+
+													</tr>
+													<tr>
+														<td><strong>Mohu chodit na volno</strong></td>
+														<td colspan="3">Ne</td>
+														<td><div id="pen6" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Jak moc jsem aktivní</strong></td>
+														<td class="col-lg-4 col-md-4 col-xs-6" colspan="2">rád běhám, ale třeštiprdla nemusím.</td>
+														<td class="centered col-md-4">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-liny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point">&nbsp;</div></li>
+																		<li><div class="point">&nbsp;</div></li>
+																		<li><div class="point">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-active" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Méně aktivní</div>
+																</div>
+															</div>
+																<i class="icon-liny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Méně aktivni</p>
+														</td>
+														<td><div id="pen7" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Chování k ostatním psům</strong></td>
+														<td class="col-lg-4" colspan="2">Potřebuji se rozkoukat</td>
+														<td class="centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scare-dog" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-dog-1" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Potřebuji se rozkoukat</div>
+																</div>
+															</div>
+																<i class="icon-friendly-dog-1 hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Potřebuji se rozkoukat</p>
+														</td>
+														<td><div id="pen8" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+													<tr>
+														<td><strong>Chování k lidem</strong></td>
+														<td class="col-lg-4" colspan="2">Nemám rád, když mě lidé chovají. Jinak je ignoruji.</td>
+														<td class="centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scared-men" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-men" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Nevšímejte si mě</div>
+																</div>
+															</div>
+																<i class="icon-scared-men hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Nevšímejte si mě</p>
+														</td>
+														<td><div id="pen9" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>	
+													<tr>
+														<td><strong>Jak jsem poslušná</strong></td>
+														<td class="col-lg-4" colspan="2">Umím přivolání a základní povely</td>
+														<td class="col-xs-12 centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-neposlusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-poslusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Základní povely</div>
+																</div>
+															</div>
+																<i class="icon-poslusny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Základní povely</p>
+														</td>
+														<td><div id="pen10" class="collapse"><i class="fa fa-pencil"></i></div></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+                                    </div>
+
+										<!-- Koho bych rad title -->                                    
+                                    <div role="tabpanel" class="tab-pane" id="koho">
+										<div class="row card menu_title">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-12 col-md-12 col-xs-12">
+													<strong>Koho bych rád</strong>
+												</div>	
+											</div>
+										</div>
+
+										<!-- Koho bych rad -->
+										<div class="row grey-bg card margin-bot mobile_padding">
+											<div class="col-lg-12 col-xs-12 col-md-12 margin-tp mobile_padding">				
+												<table class="table table-responsive">
+
+													<tr>
+														<td class="spec_table" colspan="5"><p style="text-align: justify;">Mám rád menší pejsky, velkých se bojím a většinou si se mnou nechtějí hrát. Strašně rád běhám a honím ostatní.</p></td>
+													</tr>
+													<tr>
+														<td class="col-lg-3 col-xs-6"><strong>Věk</strong></td>
+														<td colspan="4">0 - 5 let</td>
+													</tr>
+													<tr>
+														<td><strong>Pohlaví</strong></td>
+														<td colspan="4">Nezáleží</td>
+													</tr>
+													<tr>
+														<td class="col-lg-2"><strong>Velikost</strong></td>
+														<td class="col-lg-1"><img src="images/all_small.png" class="img-responsive" width="75%"></td>
+														<td class="col-lg-3"></td>
+													</tr>
+													<tr>
+														<td><strong>Oblíbená plemena</strong></td>
+														<td colspan="4">Šeltie, Německý boxer</td>
+													</tr>
+													<tr>
+														<td><strong>Měl bys mít rád štěňata</strong></td>
+														<td colspan="4">Ne</td>
+													</tr>
+													<tr>
+														<td><strong>Měl bys mít rád děti</strong></td>
+														<td colspan="4">Ne</td>
+													</tr>	
+													<tr>
+														<td><strong>Měl bys moci chodit na volno</strong></td>
+														<td colspan="4">Ano</td>
+													</tr>															
+													<tr>
+														<td><strong>Jak moc máš být aktivní</strong></td>
+														<td class="col-lg-4 col-md-4 col-xs-6" colspan="3">rád běhám, ale třeštiprdla nemusím.</td>
+														<td class="centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-liny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-active" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Méně aktivní</div>
+																</div>
+															</div>
+																<i class="icon-liny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Méně aktivni</p>
+														</td>
+													</tr>
+													<tr>
+														<td><strong>Jak se máš chovat k ostatním psům</strong></td>
+														<td class="col-lg-4" colspan="3"></td>
+														<td class="centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-scare-dog" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-friendly-dog-1" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Potřebuji se rozkoukat</div>
+																</div>
+															</div>
+																<i class="icon-friendly-dog-1 hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Potřebuji se rozkoukat</p>
+														</td>
+													</tr>
+													<tr>
+														<td><strong>Jak se máš chovat k lidem</strong></td>
+														<td class="col-lg-4" colspan="3">Panička respektuje psí osobnost, takže na tom nezáleží.</td>
+														<td class="right">Nezáleží</td>
+													</tr>	
+													<tr>
+														<td><strong>Jak jsem poslušná</strong></td>
+														<td class="col-lg-4" colspan="3">Umím přivolání a základní povely</td>
+														<td class="centered">
+															<div class="gallery visible-lg" style="border-left:1pt solid grey;">
+																<div class="stupnice">
+																	<ul class="list-inline list-unstyled">
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-neposlusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point active">&nbsp;</div></li>
+																		<li><div class="point ">&nbsp;</div></li>
+																		<li><span class="horni_bubbles">
+									  									<i class="icon-poslusny" style="font-size: 40px; vertical-align: middle;"></i>
+																		</span></li>
+																	</ul>
+																	<div class="popis-stupne">Umím i nějaké triky</div>
+																</div>
+															</div>
+																<i class="icon-poslusny hidden-lg" style="font-size: 40px; vertical-align: middle;"></i>
+																<p class="hidden-lg">Umím i nějaké triky</p>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div> 
+									</div>   
+
+									<!-- Venceni title -->                                     
+                                    <div role="tabpanel" class="tab-pane" id="venceni">
+					                    <div class="row card menu_title">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-12 col-md-12 col-xs-12">
+													<strong>Venčení</strong>
+												</div>	
+											</div>
+										</div>
+
+										<!-- Venceni -->
+										<div class="row grey-bg card margin">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">		
+												<br/>		
+												<table class="table table-responsive table-bordered">
+													<tr class="darkgrey-bg">
+														<td class="col-lg-2"><strong>Den</strong></td>
+														<td class="col-lg-8" colspan="2"><strong>Hodina</strong></td>
+													</tr>
+													<tr>
+														<td>Pondělí</td>
+														<td class="col-lg-2" colspan="2">12:00 - 13:00</td>
+													</tr>
+													<tr>
+														<td>Úterý</td>
+														<td class="col-lg-2">10:00 - 12:00</td>
+														<td>17:00 - 18:00</td>
+													</tr>	
+													<tr>
+														<td>Středa</td>
+														<td colspan="2"></td>
+													</tr>	
+													<tr>
+														<td>Čtvrtek</td>
+														<td colspan="2">16:00 - 20:00</td>
+													</tr>	
+													<tr>
+														<td>Pátek</td>
+														<td colspan="2"></td>
+													</tr>	
+													<tr>
+														<td>Sobota</td>
+														<td colspan="2"></td>
+													</tr>	
+													<tr>
+														<td>Neděle</td>
+														<td colspan="2"></td>
+													</tr>							
+												</table>
+
+												<table class="table table-responsive borderless">
+													<tr>
+														<td colspan="2"><p style="text-align: justify;">Jsme schopni se domluvit na kterékoliv místo v Praze. Na víkendy odjíždíme mimo Prahu, ale třeba se domluvíme i tak.</p></td>
+													</tr>
+												</table>
+												<table class="table table-responsive borderless">
+													<tr>
+														<td class="col-lg-2"><strong>Mobilní telefon</strong></td>
+														<td class="col-lg-8">+420 222 333 444</td>
+													</tr>
+													<tr>
+														<td class="col-lg-2"><strong>Email</strong></td>
+														<td class="col-lg-8">stojaver@fit.cvut.cz</td>
+													</tr>								
+												</table>
+											</div>
+										 </div>
+                                    </div>
+
+                                   
+                                    <div role="tabpanel" class="tab-pane" id="opanickovi">
+										
+										<!-- O panickovi title -->
+										<div class="row card menu_title">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-6 col-md-6 col-xs-6">
+													<strong>O páníčkovi</strong>
+												</div>	
+											</div>
+										</div>
+
+										<!-- O panickovi -->
+										<div class="row grey-bg card margin-bot bigpadding">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">		
+												<div class="col-lg-3 col-md-12 col-xs-12 centered margin-bot mobile_padding">
+													<img src="images/babeta/own.png" class="img-responsive img-circle" width="150px">
+												</div>
+												<div class="col-lg-9 col-md-12 col-xs-12 mobile_padding">
+													<div class="col-lg-12 col-md-12 col-xs-12 margin-bot mobile_padding">
+														<h4><a>Eva Snílková <small>(44 let)</small></a></h4>
+													</div>
+													<div class="col-lg-12 col-md-12 col-xs-12 mobile_padding">
+														<p style="text-align: justify;">Ráda chodím na dlouhé vycházky.</p>
+													</div>							
+												</div>
+											</div>
+										</div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="foto1">
+										<!-- Fotogalerie title -->
+										<div class="row card menu_title">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-6 col-md-6 col-xs-6">
+													<strong>Fotogalerie</strong>
+												</div>
+											</div>
+										</div>
+
+										<!-- Fotogalerie -->
+										<div class="row grey-bg card margin-bot bigpadding">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="row">
+													<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+														<a rel="galler1" class="fancybox" href="images/babeta/1.jpg">
+															<img src="images/babeta/1.jpg" class="img-responsive thumbnail" width="100%">
+														</a>
+													</div>
+													<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+														<a rel="galler1" class="fancybox" href="images/babeta/2.jpg">
+															<img src="images/babeta/2.jpg" class="img-responsive thumbnail" width="100%">
+														</a>
+													</div>
+													<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+														<a rel="galler1" class="fancybox" href="images/babeta/3.jpg">
+															<img src="images/babeta/3.jpg" class="img-responsive thumbnail" width="100%">
+														</a>
+													</div>
+													<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 centered">
+														<a rel="galler1" class="fancybox" href="images/babeta/4.jpg">
+															<img src="images/babeta/4.jpg" class="img-responsive thumbnail" width="100%">
+														</a>
+													</div>
+																									
+												</div>
+											</div>
+										</div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="obltrasy">
+										<!-- Oblibene trasy title -->
+										<div class="row card menu_title">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-6 col-md-6 col-xs-6">
+													<strong>Oblíbené trasy</strong>
+												</div>	
+											</div>
+										</div>
+
+										<!-- Oblibene trasy -->
+										<div class="row grey-bg card margin-bot bigpadding mobile_padding">
+											<table class="table borderless"> 
+												<tr><td><strong>Vlastní uložené trasy</strong></td></tr>
+											</table>
+
+											<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+
+												<table class="table">
+													<tr>
+														<td rowspan="4" class="col-lg-5 col-md-3 col-xs-3"><img src="images/mapa_ctverec.png" class="img-responsive" width="100%"></td>
+														<td><strong><a href="#">Oblíbená kolem vody</a></strong></td>	
+													</tr>
+													<tr>
+														<td>Hlavní město Praha</td>
+													</tr>
+													<tr>
+														<td>17 km</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></td>
+													</tr>													
+
+												</table>
+											</div>
+
+											<table class="table borderless"> 
+												<tr><td><strong>Veřejné trasy</strong></td></tr>
+											</table>
+
+											<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+
+												<table class="table">
+													<tr>
+														<td rowspan="4" class="col-lg-3 col-md-3 col-xs-3"><img src="images/mapa_ctverec.png" class="img-responsive" width="150px"></td>
+														<td><strong><a href="detail_trasy.html">Pankrácká trasa</a></strong></td>	
+													</tr>
+													<tr>
+														<td>Hlavní město Praha</td>
+													</tr>
+													<tr>
+														<td>3 km</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></td>
+													</tr>												
+												</table>
+											</div>
+											<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+												<table class="table">
+													<tr>
+														<td rowspan="4" class="col-lg-3 col-md-3 col-xs-3"><img src="images/mapa_ctverec.png" class="img-responsive" width="150px"></td>
+														<td><strong><a href="#">Letenský sad</a></strong></td>	
+													</tr>
+													<tr>
+														<td>Hlavní město Praha</td>
+													</tr>
+													<tr>
+														<td>8 km</td>
+													</tr>
+													<tr>
+														<td><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></td>
+													</tr>
+												</table>
+											</div>
+											
+										</div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="pratele">
+										<!-- Pratele title -->
+										<div class="row card menu_title mobile_padding">
+											<div class="col-lg-12 col-xs-12 col-md-12 mobile_padding">
+												<div class="col-lg-6 col-md-6 col-xs-6">
+													<strong>Přátelé</strong>
+												</div>	
+												<div class="col-lg-6 col-md-6 col-xs-6 text-right"><a data-toggle="modal" data-target="#info">Společní přátelé (9)</a></span>
+												</div>	
+											</div>
+										</div>
+
+										<!-- Pratele -->
+										<div class="row grey-bg card margin-bot bigpadding mobile_padding">
+											<div class="col-lg-12 small_row mobile_padding">
+												<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+													<table class="table table-condensed borderless">
+														<tr>
+															<td rowspan="4" class="col-lg-1 col-md-1 col-xs-1"><img style="cursor: pointer;" src="images/people-edit/daniela.jpg" class="mg-responsive" width="110px"></td>
+															<td class="small_row"><strong><a href="#"><h4>Daniela Nováková <small>(Praha)</small></h4></a></strong></td>
+														</tr>
+														<tr>
+															<td>Diona (Kříženec)</td>
+														</tr>
+														<tr>
+															<td>Babetka (Kříženec)</td>
+														</tr>
+														<tr>
+															<td><u><strong><a href="" data-toggle="modal" data-target="#info"></a></strong></u></td>
+														</tr>
+														<tr>
+															<td colspan="2">
+																<div class="btn-group btn-block">
+																    <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+																        <span class="col-lg-10">
+																            Jste přáteli
+																        </span> 
+																        <span class="col-lg-2">
+																            <span class="caret"></span>
+																        </span>
+																    </button>
+																    <ul class="dropdown-menu btn-block" role="menu">
+																    <li><a href="#">Poslat zprávu</a></li>
+																    <li><a href="#">Sledovat</a></li>
+																    <li class="divider"></li>
+																    <li><a href="#">Odebrat z přátel</a></li>
+																    </ul>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+													<table class="table table-condensed borderless">
+														<tr>
+															<td rowspan="4" class="col-lg-1 col-md-1 col-xs-1"><img style="cursor: pointer;" src="images/people-edit/david.jpg" class="mg-responsive" width="110px"></td>
+															<td class="small_row"><strong><a href="#"><h4>David Beneš <small>(Praha)</small></h4></a></strong></td>
+														</tr>
+														<tr>
+															<td>Fredie (Afghánský chrt)</td>
+														</tr>
+														<tr>
+															<td></td>
+														</tr>
+														<tr>
+															<td><u><strong><a href="" data-toggle="modal" data-target="#info"></a></strong></u></td>
+														</tr>
+														<tr>
+															<td colspan="2">
+																<div class="btn-group btn-block">
+																    <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+																        <span class="col-lg-10">
+																            Jste přáteli
+																        </span> 
+																        <span class="col-lg-2">
+																            <span class="caret"></span>
+																        </span>
+																    </button>
+																    <ul class="dropdown-menu btn-block" role="menu">
+																    <li><a href="#">Poslat zprávu</a></li>
+																    <li><a href="#">Sledovat</a></li>
+																    <li class="divider"></li>
+																    <li><a href="#">Odebrat z přátel</a></li>
+																    </ul>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+													<table class="table table-condensed borderless">
+														<tr>
+															<td rowspan="4" class="col-lg-1 col-md-1 col-xs-1"><img style="cursor: pointer;" src="images/play-edit/women.jpg" class="mg-responsive" width="110px"></td>
+															<td class="small_row"><strong><a href="#"><h4>Ela Vítková <small>(Olomouc)</small></h4></a></strong></td>
+														</tr>
+														<tr>
+															<td>Malina (Husky)</td>
+														</tr>
+														<tr>
+															<td>Tam-tam (Trpasličí pinč)</td>
+														</tr>
+														<tr>
+															<td><u><strong><a href="" data-toggle="modal" data-target="#info">+2 další</a></strong></u></td>
+														</tr>
+														<tr>
+															<td colspan="2">
+																<div class="btn-group btn-block">
+																    <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+																        <span class="col-lg-10">
+																            Jste přáteli
+																        </span> 
+																        <span class="col-lg-2">
+																            <span class="caret"></span>
+																        </span>
+																    </button>
+																    <ul class="dropdown-menu btn-block" role="menu">
+																    <li><a href="#">Poslat zprávu</a></li>
+																    <li><a href="#">Sledovat</a></li>
+																    <li class="divider"></li>
+																    <li><a href="#">Odebrat z přátel</a></li>
+																    </ul>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-lg-6 col-xs-12 col-md-12 mobile_padding">
+													<table class="table table-condensed borderless">
+														<tr>
+															<td rowspan="4" class="col-lg-1 col-md-1 col-xs-1"><img style="cursor: pointer;" src="images/people-edit/lukas.jpg" class="mg-responsive" width="110px"></td>
+															<td class="small_row"><strong><a href="#"><h4>Radim Lukáš <small>(Praha)</small></h4></a></strong></td>
+														</tr>
+														<tr>
+															<td>Davidos (Cane Corso)</td>
+														</tr>
+														<tr>
+															<td></td>
+														</tr>
+														<tr>
+															<td><u><strong><a href="" data-toggle="modal" data-target="#info"></a></strong></u></td>
+														</tr>
+														<tr>
+															<td colspan="2">
+																<div class="btn-group btn-block">
+																    <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown">
+																        <span class="col-lg-10">
+																            Jste přáteli
+																        </span> 
+																        <span class="col-lg-2">
+																            <span class="caret"></span>
+																        </span>
+																    </button>
+																    <ul class="dropdown-menu btn-block" role="menu">
+																    <li><a href="#">Poslat zprávu</a></li>
+																    <li><a href="#">Sledovat</a></li>
+																    <li class="divider"></li>
+																    <li><a href="#">Odebrat z přátel</a></li>
+																    </ul>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												<div class="col-lg-12" style="text-align: right;">
+													<ul class="pagination">
+														<li class="active"><a href="">1</a></li>
+														<li><a href="">2</a></li>
+														<li><a href="">3</a></li>
+													</ul>
+												</div>	
+
+											</div>
+										</div>
+
+
+                                    </div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- Kde bydlím -->
+					<div class="row card menu_title" id="kde_bydlim">
+						<div class="col-lg-12">								
+						<p><strong>Kde bydlím</strong></p><div class="row">	
+						<td class="centered"><img src="images/vysak2-map.jpg" class="img-responsive" width="100%"></td>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Pravy blok -->
+				<!-- Fotogalerie vpravo -->
+				<div class="col-lg-2">
+					<div class="row margin-bot visible-lg">
+						<div class="col-lg-12 col-xs-8 col-sm-6 col-md-6 centered2 ">
+         					<div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
+							<h5><a href="#foto1" aria-controls="foto1" role="tab" data-toggle="tab">Fotogalerie (8)</a></h5>
+					                <div class="col-lg-12  col-md-12">
+					                    <span data-slide="next" class=" btn-vertical-slider fa fa-caret-up"
+					                        style="font-size: 30px"></span>  
+					            	</div>
+					            <!-- Carousel items -->
+					            <div class="carousel-inner">
+					                <div class="item active">
+					                    <div class="row">
+					                        <div class="col-lg-12  col-xs-6 col-sm-5 col-md-5">
+					                        	<a rel="galler2" class="fancybox" href="images/babeta/1.jpg">
+													<img src="images/babeta/1.jpg" class="img-responsive thumbnail" width="100%">
+												</a>
+												<a rel="galler2" class="fancybox" href="images/babeta/2.jpg">
+													<img src="images/babeta/2.jpg" class="img-responsive thumbnail" width="100%">
+												</a>
+												<a rel="galler2" class="fancybox" href="images/babeta/3.jpg">
+													<img src="images/babeta/3.jpg" class="img-responsive thumbnail" width="100%">
+												</a>
+												<a rel="galler2" class="fancybox" href="images/babeta/4.jpg">
+													<img src="images/babeta/4.jpg" class="img-responsive thumbnail" width="100%">
+												</a>
+					                        </div>
+					                    </div>
+					                    <!--/row-fluid-->
+					                </div>
+					            </div>
+					                <div class="col-lg-12 centered col-md-4">
+					                    <span data-slide="prev" class="btn-vertical-slider fa fa-caret-down"
+					                        style="color: Black; font-size: 30px"></span>
+					            </div>
+					        </div>
+						</div>
+					</div>
+
+
+					<!-- Pratele vpravo -->
+					<div class="row margin-bot visible-lg">
+						<div class="col-lg-1 ">
+						</div>
+						<div class="row">
+							<div class="col-lg-7 grey-bg">
+								<h5><a href="#pratele" aria-controls="pratele" role="tab" data-toggle="tab">Přátelé (11)</a></h5>										
+								<div class="col-lg-6 grey-bg margin-bot">
+									<div class="row">
+										<img src="images/people-edit/daniela.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/david.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/eva.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/jitka.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+														
+								<div class="col-lg-6 grey-bg">
+									<div class="row">
+										<img src="images/people-edit/katerina.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/luen.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/lukas.jpg" class="img-responsive thumbnail" width="100%">
+										<img src="images/people-edit/petra.jpg" class="img-responsive thumbnail" width="100%">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-1">
+						</div>					
+					</div>
+
+					<!-- Share site vpravo -->
+					<div class="row">
+						<div class="col-lg-1 col-xs-12 col-md-12">
+						</div>
+						<div class="row">
+							<div class="col-lg-7 col-xs-12 col-md-12 centered right grey-bg" style="cursor: pointer;" data-toggle="modal" data-target="#info" >
+								<span class="fa fa-facebook fa-lg"></span>	
+								<span class="fa fa-google-plus fa-lg"></span>
+								<span class="fa fa-twitter fa-lg"></span>
+								<span class="fa fa-comment fa-lg"></span>
+								<span class="fa fa-envelope fa-lg"></span>
+							</div>
+						</div>	
+						<div class="col-lg-1">
+						</div>		
+					</div>
+
+
+
+					<!-- Modal info -->
+					<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						 <div class="modal-dialog" role="document">
+								 <div class="modal-content">
+								  	<div class="modal-header">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								   	 <h4 class="modal-title" id="myModalLabel">Funkce není dostupná</h4>
+								  	</div>
+								 	 <div class="modal-body">
+								    	<p>Toto je pouze testovací verze uživatelského rozhraní, v této verzi není tato funkce dostupná</p>   
+								  	</div>
+								 	 <div class="modal-footer">
+								   	 <button type="button" class="btn btn-default" data-dismiss="modal">Zavřít</button>
+								 	 </div>
+									</div>
+							</div>
+					</div>	
+		</div>
+	
+		<!-- JQuery -->
+		<!-- for local Bootstrap: src="js/jquery.min.js" -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+				<!-- Fancybox -->
+		<script src="./js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="./js/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+		<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/i18n/defaults-*.min.js"></script>
+
+		<script src="./js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="./js/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+		
+		<script src="test.js"></script>
+		<script src="test2.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- for local Bootstrap: src="js/bootstrap.min.js" -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+  var _mfq = _mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/9c394584-0c93-4294-a849-d60e999d3d5a.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+	</body>
+</html>
