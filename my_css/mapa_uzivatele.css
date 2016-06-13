@@ -1,0 +1,73 @@
+.map {
+  position: relative;
+  height:600px;
+  background-image:url('../images/mapa_lg_vysak.jpg');
+ } 
+ .map .image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    }
+    
+ .map .image.image1 {
+      top: 80px;
+      left: 500px;
+    }
+    
+ .map .image.image2 {
+      top: 200px;
+      left: 700px;
+    }
+
+ .map .image.image3 {
+      top: 450px;
+      left: 870px;
+    }
+
+ .map .image.image4 {
+      top: 400px;
+      left: 600px;
+    }    
+
+ .map .image.image5 {
+      top: 290px;
+      left: 600px;
+    }          
+
+@media screen and (max-width: 768px) {
+.map {
+  position: relative;
+  height:500px;
+  background-image:url('../images/mapa_xs_vysak.jpg');
+ } 
+ .map .image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    }
+    
+ .map .image.image1 {
+      top: 80px;
+      left: 60px;
+    }
+    
+ .map .image.image2 {
+      top: 200px;
+      left: 190px;
+    }
+
+ .map .image.image3 {
+      top: 450px;
+      left: 870px;
+    }
+
+ .map .image.image4 {
+      top: 400px;
+      left: 160px;
+    }    
+
+ .map .image.image5 {
+      top: 290px;
+      left: 160px;
+    }            
+}
